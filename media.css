@@ -1,0 +1,31 @@
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .navbar {
+    padding: 0 20px;
+  }
+
+  .login-btn {
+    padding: 8px 18px;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .search-card {
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 20px;
+  }
+
+  .divider {
+    display: none;
+  }
+
+  .search-btn {
+    width: 100%;
+  }
+}

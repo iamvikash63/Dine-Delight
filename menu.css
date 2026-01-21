@@ -1,0 +1,12 @@
+.menu {
+  max-width: 600px;
+  margin: 80px auto;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  border-bottom: 1px solid #ddd;
+  font-size: 16px;
+}

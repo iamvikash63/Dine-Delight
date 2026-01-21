@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Spice Hub | DineDelight</title>
+  <link rel="stylesheet" href="restaurant-detail.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="nav-left">
+      <img src="/images/Restaurant-images/Dine-Delight-logo.png" alt="DineDelight Logo" class="logo-img" />
+
+    </div>
+
+    <nav class="nav-links">
+      <a href="#" class="active">Home</a>
+      <a href="#">Events</a>
+      <a href="#restaurants">Restaurants</a>
+      <a href="#">Offers</a>
+    </nav>
+
+    <div class="nav-right">
+      <button class="login-btn">Login / Signup</button>
+    </div>
+  </header>
+
+<!-- HERO / RESTAURANT INFO -->
+<section class="restaurant-hero">
+  <div class="hero-card">
+
+    <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092" class="restaurant-img" alt="Restaurant">
+
+    <div class="restaurant-info">
+      <h1>Spice Hub</h1>
+
+      <div class="badges">
+        <span>⭐ 4.5</span>
+        <span>₹199+</span>
+        <span>⏱ 7 min</span>
+        <span class="open">🟢 Open Now</span>
+      </div>
+
+      <p class="about">
+        Authentic Indian cuisine with rich spices and fast preparation.
+      </p>
+
+      <p class="address">
+        📍 Nishat Ganj, Lucknow <br>
+        Near Royal Palace Apartment
+      </p>
+
+      <div class="actions">
+        <button class="btn primary">View Menu</button>
+        <button class="btn outline">Get Direction</button>
+        
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="menu-section">
+  <h2>Menu</h2>
+
+  <div class="menu-grid">
+
+    <div class="dish-card">
+      <img src="images/dishes/paneer.jpg" />
+      <h4>Paneer Butter Masala</h4>
+      <p>Rich creamy gravy</p>
+      <div class="dish-footer">
+        <span>₹220</span>
+        <button onclick="addToCart('Paneer Butter Masala',220)">Add</button>
+      </div>
+    </div>
+
+    <div class="dish-card">
+      <img src="images/dishes/biryani.jpg" />
+      <h4>Chicken Biryani</h4>
+      <p>Spicy & flavorful</p>
+      <div class="dish-footer">
+        <span>₹260</span>
+        <button onclick="addToCart('Chicken Biryani',260)">Add</button>
+      </div>
+    </div>
+
+    <div class="dish-card">
+      <img src="images/dishes/dosa.jpg" />
+      <h4>Masala Dosa</h4>
+      <p>Crispy South Indian</p>
+      <div class="dish-footer">
+        <span>₹120</span>
+        <button onclick="addToCart('Masala Dosa',120)">Add</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<aside class="cart">
+  <h3>Your Order</h3>
+  <ul id="cartItems"></ul>
+  <div class="cart-total">
+    Total: ₹<span id="totalPrice">0</span>
+  </div>
+  <button class="checkout-btn">Place Order</button>
+</aside>
+
+
+
+<!-- REVIEWS -->
+<section class="reviews">
+  <h2>Customer Reviews</h2>
+
+  <div class="review-grid">
+    <div class="review-card">
+      ⭐⭐⭐⭐⭐
+      <p>Best food quality and fast service.</p>
+      <small>- Rahul</small>
+    </div>
+
+    <div class="review-card">
+      ⭐⭐⭐⭐☆
+      <p>Affordable and tasty dishes.</p>
+      <small>- Anjali</small>
+    </div>
+
+    <div class="review-card">
+      ⭐⭐⭐⭐⭐
+      <p>Highly recommended for families.</p>
+      <small>- Aman</small>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery">
+  <h2>Food Gallery</h2>
+  <div class="gallery-grid">
+    <img src="images/g1.jpg">
+    <img src="images/g2.jpg">
+    <img src="images/g3.jpg">
+    <img src="images/g4.jpg">
+  </div>
+</section>
+
+<!-- STICKY CTA -->
+<div class="sticky-cta">
+  <button class="btn primary">View Menu</button>
+  <button class="btn outline">Call</button>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  © 2026 DineDelight. All rights reserved.
+</footer>
+
+
+<script src="script.js"></script>
+</body>
+</html>

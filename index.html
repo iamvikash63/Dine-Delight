@@ -2,61 +2,224 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Food Court | Premium Dining</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Court | Premium Dining</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="media.css">
 </head>
 
 <body>
 
-    <nav class="dine-delight">
-        <div class="logo">
-            <img src="/images/Restaurant-images/Dine-Delight-logo.png" alt="">
-        </div>
+  <header class="navbar">
+    <div class="nav-left">
+      <img src="/images/Restaurant-images/Dine-Delight-logo.png" alt="DineDelight Logo" class="logo-img" />
 
+    </div>
 
-
-        <div class="nav-menu">
-            <a href="">Home</a>
-            <a href="">Event</a>
-            <a href="">Restaurants</a>
-            <a href="">Offers</a>
-        </div>
-        <div class="user-profile">
-            <a href="">Login/</a>
-            <a href="">Signup</a>
-            <a href=""><i class="fa-solid fa-user"></i></a>
-        </div>
-
-        <!-- <div class="location">
-<a href=""></a>
-<a href="">B116,Mahanagar, Lucknow</a>
-    </div> -->
-
+    <nav class="nav-links">
+      <a href="#" class="active">Home</a>
+      <a href="#">Events</a>
+      <a href="#restaurants">Restaurants</a>
+      <a href="#">Offers</a>
     </nav>
 
-    <section class="hero-section">
-        <div class="hero-heading">
-            <h1>Discover the Best Restaurants Near You</h1>
-            <p>View menus, prices, preparation time & reviews before you dine</p>
+    <div class="nav-right">
+      <button class="login-btn">Login / Signup</button>
+    </div>
+  </header>
+
+
+  <section class="hero-section">
+    <div class="hero-heading">
+      <h1>Discover the Best Restaurants Near You</h1>
+      <p>View menus, prices, preparation time & reviews before you dine</p>
+    </div>
+    <div class="search-card">
+
+      <div class="search-item">
+        <span class="icon"><i class="fa-solid fa-location-dot"></i></span>
+        <input type="text" placeholder="Enter your location" />
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="search-item">
+        <span class="icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+        <input type="text" id="searchInput" placeholder="Search restaurants or dishes" />
+      </div>
+
+      <button class="search-btn" onclick="searchRestaurants()">
+        Search
+      </button>
+
+    </div>
+
+
+    <div class="cta-wrapper">
+      <button class="cta-btn primary">
+        Find Restaurants
+      </button>
+      <button class="cta-btn secondary">
+        View Menus
+      </button>
+    </div>
+
+  </section>
+
+
+
+  <!-- filter section -->
+  <div class="filter-bar">
+    <select id="ratingFilter" onchange="applyFilters()">
+      <option value="">Filter by Rating</option>
+      <option value="4.5">4.5+</option>
+      <option value="4">4+</option>
+    </select>
+
+    <select id="priceFilter" onchange="applyFilters()">
+      <option value="">Filter by Price</option>
+      <option value="₹">₹199</option>
+      <option value="₹₹">₹299</option>
+      <option value="₹₹₹">₹399</option>
+      <option value="₹₹₹">₹499</option>
+    </select>
+  </div>
+
+  <!-- 
+restaurant-card -->
+  <section class="restaurants" id="restaurants">
+    <h2>Popular Restaurants Near You</h2>
+
+    <div class="restaurant-grid" id="restaurantGrid">
+
+      <div class="restaurant-card" data-name="Spice Hub" data-rating="4.5" data-price="₹₹">
+        <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092" />
+        <div class="card-body">
+          <h3>Spice Hub</h3>
+          <p class="rating">⭐ 4.5</p>
+          <p class="avg-rest-price">Starting Just @₹199</p>
+          <p class="Res-location"><i class="fa-solid fa-location-dot"></i> 2Km away</p>
+          <button class="view-more-btn-res">view more</button>
+         
         </div>
-        <div class="hero-location">
-            <div class="location">
-                <i class="fa-solid fa-location-crosshairs"></i> <input type="text" placeholder="Your Location here">
-            </div>
+      </div>
 
-            <div class="hero-search-bar">
-                <input type="text" placeholder="search your favorate restaurants"><i class="fa-solid fa-magnifying-glass"></i>
-            </div>
+      <div class="restaurant-card" data-name="Burger Town">
+        <img src="https://images.unsplash.com/photo-1550547660-d9450f859349" />
+        <div class="card-body">
+          <h3>Burger Town</h3>
+          <p class="rating">⭐ 4.2</p>
+           <p class="avg-rest-price">Starting Just @₹199</p>
+          <p class="Res-location"><i class="fa-solid fa-location-dot"></i> 2Km away</p>
+          <button class="view-more-btn-res">view more</button>
+        
         </div>
+      </div>
 
-    </section>
+      <div class="restaurant-card" data-name="Pasta Palace">
+        <img src="https://images.unsplash.com/photo-1525755662778-989d0524087e" />
+        <div class="card-body">
+          <h3>Pasta Palace</h3>
+          <p class="rating">4.7⭐⭐⭐⭐</p>
+           <p class="avg-rest-price">Starting Just @₹199</p>
+          <p class="Res-location"><i class="fa-solid fa-location-dot"></i> 2Km away</p>
+          <button class="view-more-btn-res">view more</button>
+          
+        </div>
+      </div>
 
+    </div>
+  </section>
+
+
+
+
+  <section class="how-it-works">
+    <h2>How DineDelight Works</h2>
+
+    <div class="steps">
+      <div class="step">
+        <img src="/images/Restaurant-images/how-it-work-img1.png" alt="">
+       
+      </div>
+
+      <div class="step">
+        <img src="/images/Restaurant-images/how-it-work-img2.png" alt="">
+      </div>
+
+      <div class="step">
+       <img src="/images/Restaurant-images/how-it-work-img3.png" alt="">
+      </div>
+    </div>
+  </section>
+
+
+  <section class="why-us">
+    <h2>Why Choose DineDelight</h2>
+
+    <div class="why-grid">
+      <div class="why-choose-us-img"><img src="/images/Restaurant-images/why-ch-us-img1.png" alt=""> <p>Real Time Menu</p></div>
+      <div class="why-choose-us-img"><img src="/images/Restaurant-images/why-ch-us-img2.png" alt="">
+      <p>Accurate Preparation Time</p></div>
+      <div class="why-choose-us-img"><img src="/images/Restaurant-images/why-ch-us-img3.png" alt=""><p>Trusted Restaurants Data</p></div>
+      <div class="why-choose-us-img"><img src="/images/Restaurant-images/why-ch-us-img4.png" alt=""><p>Restaurants Comparison</p></div>
+    </div>
+  </section>
+
+
+  <section class="categories">
+    <h2>Top Categories</h2>
+
+    <div class="category-grid">
+      <div>🍕 Pizza</div>
+      <div>🍔 Burgers</div>
+      <div>🥗 Healthy</div>
+      <div>🍰 Desserts</div>
+      <div>☕ Cafés</div>
+    </div>
+  </section>
+
+
+  <section class="reviews">
+    <h2>What Users Say</h2>
+
+    <div class="review-grid">
+      <div class="review">
+        ⭐⭐⭐⭐⭐
+        <p>Best food discovery platform!</p>
+      </div>
+
+      <div class="review">
+        ⭐⭐⭐⭐☆
+        <p>Menus & prices are accurate.</p>
+      </div>
+
+      <div class="review">
+        ⭐⭐⭐⭐⭐
+        <p>Very easy to use.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="final-cta">
+    <h2>Ready to Explore Restaurants?</h2>
+    <button class="cta-btn primary">Find Restaurants Near You</button>
+  </section>
+
+
+
+  <footer class="footer">
+    <p>© 2026 DineDelight. All rights reserved.</p>
+  </footer>
+
+
+  <script src="script.js"></script>
 </body>
 
 </html>

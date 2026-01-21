@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+
+
+/* BUTTONS */
+.btn {
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+}
+
+.primary {
+  background: #ff7a00;
+  color: #fff;
+}
+
+.outline {
+  background: #fff;
+  border: 2px solid #ff7a00;
+  color: #ff7a00;
+}
+
+
+
+.center {
+  margin: 30px auto 0;
+  display: block;
+}
+
+/* HERO */
+.restaurant-hero {
+  background: #fff7f0;
+  padding: 60px;
+}
+
+.hero-card {
+  display: flex;
+  gap: 40px;
+  background: #fff;
+  border-radius: 24px;
+  padding: 40px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
+
+.restaurant-img {
+  width: 420px;
+  border-radius: 20px;
+}
+
+.restaurant-info h1 {
+  font-size: 34px;
+  margin-bottom: 15px;
+}
+
+.badges span {
+  display: inline-block;
+  margin: 6px 10px 6px 0;
+  padding: 6px 14px;
+  background: #ffe4cc;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.open {
+  background: #d4f8d4;
+}
+
+.actions {
+  margin-top: 25px;
+}
+
+
+/* MENU */
+.menu-section {
+  padding: 80px 60px;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.dish-card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.dish-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.dish-card h4 {
+  padding: 10px 15px 0;
+}
+
+.dish-card p {
+  padding: 0 15px;
+  font-size: 14px;
+  color: #666;
+}
+
+.dish-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+.dish-footer button {
+  background: #ff7a00;
+  color: #fff;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* CART */
+.cart {
+  position: fixed;
+  right: 20px;
+  top: 120px;
+  width: 260px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+}
+
+.cart h3 {
+  margin-bottom: 15px;
+}
+
+.cart ul {
+  list-style: none;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.cart ul li {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.cart-total {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.checkout-btn {
+  width: 100%;
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 25px;
+  background: #ff7a00;
+  color: #fff;
+  border: none;
+}
+
+
+/* REVIEWS */
+.reviews {
+  background: #fff7f0;
+  padding: 80px 60px;
+}
+
+.review-grid {
+  display: flex;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.review-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* GALLERY */
+.gallery {
+  padding: 80px 60px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 15px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  border-radius: 16px;
+}
+
+/* STICKY CTA */
+.sticky-cta {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  padding: 15px;
+  border-radius: 40px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  display: flex;
+  gap: 10px;
+}
+
+/* FOOTER */
+.footer {
+  padding: 30px;
+  text-align: center;
+  background: #111;
+  color: #fff;
+  margin-top: 100px;
+}
