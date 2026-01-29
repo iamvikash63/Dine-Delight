@@ -250,13 +250,13 @@ hero section style  */
 
 .restaurants h2 {
   text-align: center;
-  font-size: 32px;
+  font-size: 35px;
   margin-bottom: 50px;
 }
 
 .restaurant-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
   gap: 30px;
 }
 
@@ -283,17 +283,18 @@ hero section style  */
 }
 
 .card-body h3 {
-  font-size: 18px;
+  font-size: 22px;
   margin-bottom: 8px;
 }
 .card-body p{
   margin: 10px 0px 10px 0px;
+  font-size: 1.3rem;
 }
 .card-body button{
   cursor: pointer;
   padding: 10px;
   border-radius: 20px;
-  font-size: 1rem;
+  font-size: 0.9rem;
   outline: none;
   border: none;
  background: linear-gradient(135deg, #ff6a00, #ff9f1c);
@@ -301,6 +302,12 @@ hero section style  */
   font-weight: 500;
 }
 
+.view-more-btn-res a{
+   color: #fff;
+   text-decoration: none;
+   font-weight: 600;
+
+}
 .rating {
   color: #ff6a00;
   font-weight: 600;
