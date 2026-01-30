@@ -1,0 +1,120 @@
+[
+  {
+    "id": 1,
+    "veg":"veg-image",
+    "non-veg": "non-veg-image",
+    "name": "Spice Villa",
+    "rating": 4.5,
+    "price": "299",
+    "prepTime": "25 min",
+    "image": "https://images.unsplash.com/photo-1600891964599-f61ba0e24092",
+    "location":"B116, Faizabad Road, Nishat Ganj, Lucknow",
+    "menu": [
+      {
+        "dish": "Paneer Butter Masala",
+        "price": 220,
+        "image": "images/paneer.jpg"
+      },
+      {
+        "dish": "Butter Naan",
+        "price": 40,
+        "image": "images/naan.jpg"
+      }
+    ]
+  },
+
+  {
+    "id": 2,
+    "veg":"veg-image",
+    "non-veg": "non-veg-image",
+    "name": "Sharma ji",
+    "rating": 4.2,
+    "price": "199",
+    "prepTime": "20 min",
+    "image": "https://images.unsplash.com/photo-1550547660-d9450f859349",
+    "location":"Hasan Ganj Lucknow",
+    "menu": [
+      {
+        "dish": "Veg Burger",
+        "price": 120,
+        "image": "images/burger.jpg"
+      }
+    ]
+  },
+
+   {
+    "id": 2,
+    "veg":"veg-image",
+    "non-veg": "non-veg-image",
+    "name": "Urban Bites",
+    "rating": 4.2,
+    "price": "499",
+    "prepTime": "20 min",
+    "image": "https://images.unsplash.com/photo-1525755662778-989d0524087e",
+    "location":"lucknow",
+    "menu": [
+      {
+        "dish": "Veg Burger",
+        "price": 120,
+        "image": "images/burger.jpg"
+      }
+    ]
+  },
+
+    {
+    "id": 2,
+    "veg":"veg-image",
+    "non-veg": "non-veg-image",
+    "name": "Domino's",
+    "rating": 4.2,
+    "price": "499",
+    "prepTime": "20 min",
+    "image": "images/Restaurant-images/Dominoz.jpg",
+    "location":"lucknow",
+    "menu": [
+      {
+        "dish": "Veg Burger",
+        "price": 120,
+        "image": "images/burger.jpg"
+      }
+    ]
+  },
+  
+    {
+    "id": 2,
+    "veg":"veg-image",
+    "non-veg": "non-veg-image",
+    "name": "KFC",
+    "rating": 4.2,
+    "price": "499",
+    "prepTime": "20 min",
+    "image": "images/Restaurant-images/KFC.jpg",
+    "location":"lucknow",
+    "menu": [
+      {
+        "dish": "Veg Burger",
+        "price": 120,
+        "image": "images/burger.jpg"
+      }
+    ]
+  },
+
+    {
+    "id": 2,
+    "veg":"veg-image",
+    "non-veg": "non-veg-image",
+    "name": "Wow Momo",
+    "rating": 4.2,
+    "price": "499",
+    "prepTime": "20 min",
+    "image": "images/Restaurant-images/wow-momo.jpg",
+    "location":"lucknow",
+    "menu": [
+      {
+        "dish": "Veg Burger",
+        "price": 120,
+        "image": "images/burger.jpg"
+      }
+    ]
+  }
+]
