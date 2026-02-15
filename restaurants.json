@@ -1,119 +1,343 @@
-[
+﻿[
   {
     "id": 1,
-    "veg":"veg-image",
+    "veg": "veg-image",
     "non-veg": "non-veg-image",
     "name": "Spice Villa",
     "rating": 4.5,
     "price": "299",
     "prepTime": "25 min",
     "image": "https://images.unsplash.com/photo-1600891964599-f61ba0e24092",
-    "location":"B116, Faizabad Road, Nishat Ganj, Lucknow",
+    "location": "Nishat Ganj, Lucknow",
+    "about": "Spice Villa serves classic North Indian comfort food with fresh gravies and tandoor breads.",
+    "restype1": "North Indian",
+    "restype2": "Chinese",
+    "restype3": "Veg",
+    "restype4": "Non Veg",
+    "offers": "Flat 20% OFF Today",
     "menu": [
       {
         "dish": "Paneer Butter Masala",
         "price": 220,
-        "image": "images/paneer.jpg"
+        "image": "https://images.unsplash.com/photo-1525755662778-989d0524087e"
+      },
+      {
+        "dish": "Dal Makhani",
+        "price": 190,
+        "image": "https://images.unsplash.com/photo-1543353071-873f17a7a088"
       },
       {
         "dish": "Butter Naan",
         "price": 40,
-        "image": "images/naan.jpg"
+        "image": "https://images.unsplash.com/photo-1601050690597-df0568f70950"
+      },
+      {
+        "dish": "Chicken Tikka",
+        "price": 260,
+        "image": "https://images.unsplash.com/photo-1604908812024-3922f330b631"
+      },
+      {
+        "dish": "Paneer Butter Masala",
+        "price": 220,
+        "image": "https://images.unsplash.com/photo-1525755662778-989d0524087e"
+      },
+      {
+        "dish": "Dal Makhani",
+        "price": 190,
+        "image": "https://images.unsplash.com/photo-1543353071-873f17a7a088"
+      },
+      {
+        "dish": "Butter Naan",
+        "price": 40,
+        "image": "https://images.unsplash.com/photo-1601050690597-df0568f70950"
+      },
+      {
+        "dish": "Chicken Tikka",
+        "price": 260,
+        "image": "https://images.unsplash.com/photo-1604908812024-3922f330b631"
       }
     ]
   },
-
   {
     "id": 2,
-    "veg":"veg-image",
+    "veg": "veg-image",
     "non-veg": "non-veg-image",
-    "name": "Sharma ji",
+    "name": "Sharma Ji",
     "rating": 4.2,
     "price": "199",
     "prepTime": "20 min",
     "image": "https://images.unsplash.com/photo-1550547660-d9450f859349",
-    "location":"Hasan Ganj Lucknow",
+    "location": "Hasan Ganj, Lucknow",
+    "about": "Local favorite for quick bites, burgers, rolls, and crispy sides.",
+    "restype1": "Street Food",
+    "restype2": "Fast Food",
+    "restype3": "Veg",
+    "restype4": "Non Veg",
+    "offers": "Buy 1 Get 1 on Burgers",
     "menu": [
       {
         "dish": "Veg Burger",
         "price": 120,
-        "image": "images/burger.jpg"
+        "image": "https://images.unsplash.com/photo-1550547660-d9450f859349"
+      },
+      {
+        "dish": "Chicken Burger",
+        "price": 150,
+        "image": "https://images.unsplash.com/photo-1610970878451-6f8bca0f7b74"
+      },
+      {
+        "dish": "Cheese Fries",
+        "price": 90,
+        "image": "https://images.unsplash.com/photo-1499028344343-cd173ffc68a9"
+      },
+      {
+        "dish": "Veg Wrap",
+        "price": 110,
+        "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836"
+      },
+        {
+        "dish": "Veg Wrap",
+        "price": 110,
+        "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836"
+      },
+        {
+        "dish": "Veg Wrap",
+        "price": 110,
+        "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836"
       }
     ]
   },
-
-   {
-    "id": 2,
-    "veg":"veg-image",
+  {
+    "id": 3,
+    "veg": "veg-image",
     "non-veg": "non-veg-image",
     "name": "Urban Bites",
-    "rating": 4.2,
+    "rating": 4.3,
     "price": "499",
-    "prepTime": "20 min",
+    "prepTime": "30 min",
     "image": "https://images.unsplash.com/photo-1525755662778-989d0524087e",
-    "location":"lucknow",
+    "location": "Gomti Nagar, Lucknow",
+    "about": "Trendy cafe with bowls, sandwiches, and light continental plates.",
+    "restype1": "Cafe",
+    "restype2": "Continental",
+    "restype3": "Veg",
+    "restype4": "Non Veg",
+    "offers": "Free dessert on orders above 799",
     "menu": [
       {
-        "dish": "Veg Burger",
-        "price": 120,
-        "image": "images/burger.jpg"
+        "dish": "Grilled Veg Sandwich",
+        "price": 180,
+        "image": "https://images.unsplash.com/photo-1550507992-eb63ffee0847"
+      },
+      {
+        "dish": "Pasta Alfredo",
+        "price": 260,
+        "image": "https://images.unsplash.com/photo-1521389508051-d7ffb5dc8b91"
+      },
+      {
+        "dish": "Chicken Caesar Salad",
+        "price": 240,
+        "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd"
+      },
+      {
+        "dish": "Cold Coffee",
+        "price": 150,
+        "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93"
       }
     ]
   },
-
-    {
-    "id": 2,
-    "veg":"veg-image",
+  {
+    "id": 4,
+    "veg": "veg-image",
     "non-veg": "non-veg-image",
     "name": "Domino's",
     "rating": 4.2,
     "price": "499",
-    "prepTime": "20 min",
+    "prepTime": "25 min",
     "image": "images/Restaurant-images/Dominoz.jpg",
-    "location":"lucknow",
+    "location": "Lucknow Vishwavidyalay Metro Station, Lucknow",
+    "about": "Classic pizzas, sides, and desserts with quick delivery.",
+    "restype1": "Pizza",
+    "restype2": "Fast Food",
+    "restype3": "Veg",
+    "restype4": "Non Veg",
+    "offers": "Flat 30% OFF on Family Pizzas",
     "menu": [
       {
-        "dish": "Veg Burger",
-        "price": 120,
-        "image": "images/burger.jpg"
+        "dish": "Margherita Pizza",
+        "price": 199,
+        "image": "https://images.unsplash.com/photo-1548365328-8b849e6f3f3c"
+      },
+      {
+        "dish": "Farmhouse Pizza",
+        "price": 299,
+        "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591"
+      },
+      {
+        "dish": "Pepper Chicken Pizza",
+        "price": 349,
+        "image": "https://images.unsplash.com/photo-1541592106381-b31e9677c0e5"
+      },
+      {
+        "dish": "Garlic Bread",
+        "price": 129,
+        "image": "https://images.unsplash.com/photo-1498837167922-ddd27525d352"
       }
     ]
   },
-  
-    {
-    "id": 2,
-    "veg":"veg-image",
+  {
+    "id": 5,
+    "veg": "veg-image",
     "non-veg": "non-veg-image",
     "name": "KFC",
-    "rating": 4.2,
+    "rating": 4.1,
     "price": "499",
-    "prepTime": "20 min",
+    "prepTime": "25 min",
     "image": "images/Restaurant-images/KFC.jpg",
-    "location":"lucknow",
+    "location": "Fun Mall, Lohiya Path, Gomti Nagar, Lucknow",
+    "about": "Crispy fried chicken, burgers, and combo meals.",
+    "restype1": "Fast Food",
+    "restype2": "American",
+    "restype3": "Veg",
+    "restype4": "Non Veg",
+    "offers": "Combo Meals from 299",
     "menu": [
       {
-        "dish": "Veg Burger",
-        "price": 120,
-        "image": "images/burger.jpg"
+        "dish": "Hot and Crispy Chicken",
+        "price": 199,
+        "image": "https://images.unsplash.com/photo-1604908177522-0404c66a6a0d"
+      },
+      {
+        "dish": "Zinger Burger",
+        "price": 170,
+        "image": "https://images.unsplash.com/photo-1550547660-d9450f859349"
+      },
+      {
+        "dish": "Chicken Popcorn",
+        "price": 159,
+        "image": "https://images.unsplash.com/photo-1604908812024-3922f330b631"
+      },
+      {
+        "dish": "Pepsi 475 ml",
+        "price": 60,
+        "image": "https://images.unsplash.com/photo-1527169402691-feff5539e52c"
       }
     ]
   },
-
-    {
-    "id": 2,
-    "veg":"veg-image",
+  {
+    "id": 6,
+    "veg": "veg-image",
     "non-veg": "non-veg-image",
     "name": "Wow Momo",
-    "rating": 4.2,
-    "price": "499",
+    "rating": 4.0,
+    "price": "399",
     "prepTime": "20 min",
     "image": "images/Restaurant-images/wow-momo.jpg",
-    "location":"lucknow",
+    "location": "Fun Mall, Lohiya Path, Gomti Nagar, Lucknow",
+    "about": "Steamed, fried, and pan-fried momos with spicy chutneys.",
+    "restype1": "Momos",
+    "restype2": "Asian",
+    "restype3": "Veg",
+    "restype4": "Non Veg",
+    "offers": "Free drink on orders above 499",
     "menu": [
       {
-        "dish": "Veg Burger",
+        "dish": "Veg Steam Momo",
         "price": 120,
-        "image": "images/burger.jpg"
+        "image": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe"
+      },
+      {
+        "dish": "Chicken Fried Momo",
+        "price": 160,
+        "image": "https://images.unsplash.com/photo-1498654896293-37aacf113fd9"
+      },
+      {
+        "dish": "Paneer Tandoori Momo",
+        "price": 170,
+        "image": "https://images.unsplash.com/photo-1525755662778-989d0524087e"
+      },
+      {
+        "dish": "Chicken Thukpa",
+        "price": 190,
+        "image": "https://images.unsplash.com/photo-1473093295043-cdd812d0e601"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "veg": "veg-image",
+    "non-veg": "non-veg-image",
+    "name": "Tunday Kababi",
+    "rating": 4.6,
+    "price": "349",
+    "prepTime": "25 min",
+    "image": "https://images.unsplash.com/photo-1604908177522-0404c66a6a0d",
+    "location": "Aminabad, Lucknow",
+    "about": "Iconic kebabs and Mughlai flavors with soft rumali rotis.",
+    "restype1": "Mughlai",
+    "restype2": "North Indian",
+    "restype3": "Veg",
+    "restype4": "Non Veg",
+    "offers": "Flat 15% OFF on kebab platters",
+    "menu": [
+      {
+        "dish": "Galouti Kebab",
+        "price": 240,
+        "image": "https://images.unsplash.com/photo-1512058564366-18510be2db19"
+      },
+      {
+        "dish": "Chicken Biryani",
+        "price": 260,
+        "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836"
+      },
+      {
+        "dish": "Rumali Roti",
+        "price": 20,
+        "image": "https://images.unsplash.com/photo-1601050690597-df0568f70950"
+      },
+      {
+        "dish": "Shami Kebab",
+        "price": 210,
+        "image": "https://images.unsplash.com/photo-1604908812024-3922f330b631"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "veg": "veg-image",
+    "non-veg": "non-veg-image",
+    "name": "Royal Cafe",
+    "rating": 4.4,
+    "price": "399",
+    "prepTime": "25 min",
+    "image": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0",
+    "location": "Hazratganj, Lucknow",
+    "about": "Multi-cuisine dining with North Indian, Chinese, and chaat.",
+    "restype1": "North Indian",
+    "restype2": "Chinese",
+    "restype3": "Veg",
+    "restype4": "Non Veg",
+    "offers": "Flat 25% OFF on weekdays",
+    "menu": [
+      {
+        "dish": "Dahi Puri",
+        "price": 120,
+        "image": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe"
+      },
+      {
+        "dish": "Chilli Paneer",
+        "price": 220,
+        "image": "https://images.unsplash.com/photo-1543353071-873f17a7a088"
+      },
+      {
+        "dish": "Veg Fried Rice",
+        "price": 180,
+        "image": "https://images.unsplash.com/photo-1473093295043-cdd812d0e601"
+      },
+      {
+        "dish": "Gulab Jamun",
+        "price": 90,
+        "image": "https://images.unsplash.com/photo-1504754524776-8f4f37790ca0"
       }
     ]
   }

@@ -1,24 +1,39 @@
-@media (max-width: 768px) {
-  .nav-links {
-    display: none;
-  }
-
+@media (max-width: 960px) {
   .navbar {
-    padding: 0 20px;
+    padding: 10px 18px;
+    flex-wrap: wrap;
+    row-gap: 10px;
   }
 
-  .login-btn {
-    padding: 8px 18px;
+  .nav-links {
+    order: 3;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .hero-stats {
+    grid-template-columns: 1fr;
   }
 }
 
+@media (max-width: 760px) {
+  .hero-section {
+    padding-top: 34px;
+  }
 
-
-@media (max-width: 768px) {
   .search-card {
     flex-direction: column;
     border-radius: 20px;
-    padding: 20px;
+    padding: 14px;
+  }
+
+  .search-item {
+    width: 100%;
+    border: 1px solid #f1dfcb;
+    border-radius: 14px;
+    padding: 10px;
   }
 
   .divider {
@@ -27,5 +42,28 @@
 
   .search-btn {
     width: 100%;
+  }
+
+  .cta-wrapper {
+    flex-direction: column;
+    width: min(360px, 92%);
+  }
+
+  .cta-btn {
+    width: 100%;
+  }
+
+  .filter-bar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .filter-bar select {
+    width: 100%;
+  }
+
+  .best-deals,
+  .why-us {
+    border-radius: 18px;
   }
 }
