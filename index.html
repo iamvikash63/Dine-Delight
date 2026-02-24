@@ -62,30 +62,195 @@
       <div><strong>4.8</strong><span>Average User Rating</span></div>
       <div><strong>25 min</strong><span>Typical Prep Time</span></div>
     </div>
-  </section>
-
-  <section class="filter-wrap">
-    <div class="filter-bar">
-      <select id="ratingFilter" onchange="applyFilters()">
-        <option value="">Filter by Rating</option>
-        <option value="4.5">4.5+</option>
-        <option value="4">4+</option>
-      </select>
-
-      <select id="priceFilter" onchange="applyFilters()">
-        <option value="">Filter by Price</option>
-        <option value="199">&#8377;199</option>
-        <option value="299">&#8377;299</option>
-        <option value="399">&#8377;399</option>
-        <option value="499">&#8377;499</option>
-      </select>
+    <div class="hero-stats">
+      <div><strong>Dining</strong><span>Stay for a Bite</span></div>
+      <div><strong>Takeaway</strong><span>Take it to Go</span></div>
+      <div><strong>Delivery</strong><span>Order In</span></div>
     </div>
   </section>
 
+
+<div class="Select-options-to-show">
+  <ul>
+    <li>
+      Restaurants
+    </li>
+    <li>Events</li>
+    <li>Movies</li>
+    <li>Recipe</li>
+    <li>Ask Anythings</li>
+  </ul>
+</div>
+  <!-- populate restaurants section -->
+<div class="Populate-restaurant-section">
+
+
+  <!-- side bar filter section -->
+
+  <aside id="aside-filter-section">
+    <div class="aside-filter-title-main">
+      <h2>Filters</h2>
+      <a href="#" aria-label="Reset all filters">Reset All</a>
+    </div>
+
+    <div class="filter-group">
+      <h3>Core Context</h3>
+      <label for="filter-location">Location</label>
+      <input type="text" name="location" id="filter-location" placeholder="Enter area or city">
+
+      <label for="filter-order-mode">Order Mode</label>
+      <select id="filter-order-mode" name="order-mode">
+        <option value="">All</option>
+        <option value="delivery">Delivery</option>
+        <option value="takeaway">Takeaway</option>
+        <option value="dine-in">Dine-In</option>
+      </select>
+
+      <label for="filter-availability">Availability</label>
+      <select id="filter-availability" name="availability">
+        <option value="">Any Time</option>
+        <option value="open-now">Open Now</option>
+        <option value="closing-soon">Closing Soon</option>
+        <option value="preorder">Pre-Order</option>
+      </select>
+    </div>
+
+    <div class="filter-group">
+      <h3>Food</h3>
+      <label for="filter-cuisine">Cuisine</label>
+      <select id="filter-cuisine" name="cuisine">
+        <option value="">All Cuisines</option>
+        <option value="north-indian">North Indian</option>
+        <option value="south-indian">South Indian</option>
+        <option value="chinese">Chinese</option>
+        <option value="italian">Italian</option>
+        <option value="continental">Continental</option>
+      </select>
+
+      <label for="filter-food-preference">Food Preference</label>
+      <select id="filter-food-preference" name="food-preference">
+        <option value="">All Preferences</option>
+        <option value="veg">Pure Veg</option>
+        <option value="non-veg">Non-Veg</option>
+        <option value="vegan">Vegan</option>
+        <option value="jain">Jain</option>
+      </select>
+    </div>
+
+    <div class="filter-group">
+      <h3>Budget</h3>
+      <label for="priceFilter">Price Range</label>
+      <select id="priceFilter" name="price" onchange="applyFilters()">
+        <option value="">Any Budget</option>
+        <option value="250">Up to Rs 250</option>
+        <option value="500">Up to Rs 500</option>
+        <option value="800">Up to Rs 800</option>
+        <option value="1200">Up to Rs 1200</option>
+      </select>
+
+      <label for="filter-offers">Offers</label>
+      <select id="filter-offers" name="offers">
+        <option value="">All Offers</option>
+        <option value="flat-discount">Flat Discount</option>
+        <option value="free-delivery">Free Delivery</option>
+        <option value="bogo">Buy 1 Get 1</option>
+        <option value="bank-offers">Bank Offers</option>
+      </select>
+    </div>
+
+    <div class="filter-group">
+      <h3>Quality</h3>
+      <label for="ratingFilter">Rating</label>
+      <select id="ratingFilter" name="rating" onchange="applyFilters()">
+        <option value="">All Ratings</option>
+        <option value="3">3.0+ and above</option>
+        <option value="4">4.0+ and above</option>
+        <option value="4.5">4.5+ and above</option>
+      </select>
+
+      <label for="filter-sorting">Sorting</label>
+      <select id="filter-sorting" name="sorting">
+        <option value="">Recommended</option>
+        <option value="rating-desc">Top Rated</option>
+        <option value="price-asc">Price: Low to High</option>
+        <option value="delivery-time">Fastest Delivery</option>
+      </select>
+    </div>
+
+    <div class="filter-group">
+      <h3>Delivery</h3>
+      <label class="checkbox-row"><input type="checkbox" name="delivery-free"> Free Delivery</label>
+      <label class="checkbox-row"><input type="checkbox" name="delivery-under-30"> Under 30 min</label>
+    </div>
+
+    <div class="filter-group">
+      <h3>Dine-In</h3>
+      <label class="checkbox-row"><input type="checkbox" name="dinein-booking"> Table Booking</label>
+      <label class="checkbox-row"><input type="checkbox" name="dinein-family"> Family Friendly</label>
+    </div>
+
+    <div class="filter-group">
+      <h3>Restaurant Type</h3>
+      <select id="filter-restaurant-type" name="restaurant-type">
+        <option value="">All Types</option>
+        <option value="casual-dining">Casual Dining</option>
+        <option value="fine-dining">Fine Dining</option>
+        <option value="cloud-kitchen">Cloud Kitchen</option>
+        <option value="cafe">Cafe</option>
+      </select>
+    </div>
+
+    <div class="filter-group">
+      <h3>Payment</h3>
+      <select id="filter-payment" name="payment">
+        <option value="">All Methods</option>
+        <option value="upi">UPI</option>
+        <option value="cards">Cards</option>
+        <option value="cash">Cash</option>
+        <option value="wallets">Wallets</option>
+      </select>
+    </div>
+
+    <div class="filter-group">
+      <h3>Occasion</h3>
+      <select id="filter-occasion" name="occasion">
+        <option value="">Any Occasion</option>
+        <option value="date-night">Date Night</option>
+        <option value="family-dinner">Family Dinner</option>
+        <option value="work-lunch">Work Lunch</option>
+        <option value="quick-bite">Quick Bite</option>
+      </select>
+    </div>
+
+    <div class="filter-group">
+      <h3>Platform Availability</h3>
+      <select id="filter-platform" name="platform-availability">
+        <option value="">All Platforms</option>
+        <option value="exclusive">Platform Exclusive</option>
+        <option value="partner">Partner Restaurants</option>
+        <option value="premium">Premium Only</option>
+      </select>
+    </div>
+  </aside>
+
+<!-- ######################## Restaurants section ################ -->
+
   <section class="restaurants" id="restaurants">
-    <h2>Popular Restaurants Near You</h2>
+    <div class="Res-section-head">
+      <div class="section-head-content">
+      <h4>Showing Popular Restaurants Near You</h4>
+      <p>Compare cuisine, offers, prep time, and pricing before you order.</p>
+      </div>
+      <div class="Res-section-head-content">
+     <i class="fa-solid fa-list"></i><i class="fa-solid fa-table-cells"></i>
+      </div>
+    </div>
     <div class="restaurant-grid" id="restaurantGrid"></div>
   </section>
+
+</div>
+
+
 
   <section class="best-deals" id="best-deals">
     <div class="section-head">
@@ -174,8 +339,6 @@
     <p>&copy; 2026 DineDelight. All rights reserved.</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script type="module" src="main.js"></script>
 </body>
 </html>
-
-

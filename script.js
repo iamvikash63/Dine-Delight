@@ -1,3 +1,8 @@
+import { FormatINR } from "./utils/format.js";
+import { saveToStorage } from "./utils/storage.js";
+import { getfromStorage } from "./utils/storage.js";
+
+
 // Geolocation search restaurant based on current location
 getlocation();
 
@@ -50,8 +55,8 @@ async function fetchRestaurants(lat, lng) {
 
   const response = await fetch("restaurants.json");
   const data = await response.json();
-
-  localStorage.setItem("restaurants", JSON.stringify(data));
+saveToStorage("restaurants",data);
+  // localStorage.setItem("restaurants", JSON.stringify(data));
   displayRestaurants(data);
 }
 
@@ -60,20 +65,55 @@ function displayRestaurants(restaurants) {
   const restaurantContainer = document.getElementById("restaurantGrid");
   if (!restaurantContainer) return;
 
-  restaurantContainer.innerHTML = "";
-  restaurants.forEach((rest) => {
-    restaurantContainer.innerHTML += `
-      <div class="restaurant-card" data-name="${rest.name}" data-rating="${rest.rating}" data-price="${rest.price}" onclick="OpenRestaurant(${rest.id})">
-        <img src="${rest.image}" alt="${rest.name}" />
-        <div class="card-body">
-          <h3>${rest.name}</h3>
-          <p class="rating"><i class="fa-solid fa-star"></i> ${rest.rating}</p>
-          <p class="avg-rest-price">Starting Just @&#8377;${rest.price}</p>
-          <p class="Res-location"><i class="fa-solid fa-location-dot"></i> ${rest.location}</p>
+  const cardHtml = restaurants.map((rest) => {
+    const cuisines = [rest.restype1, rest.restype2].filter(Boolean).join(" | ") || "Multi Cuisine";
+    const menuCount = Array.isArray(rest.menu) ? rest.menu.length : 0;
+    const aboutText = (rest.about || "Freshly prepared meals from trusted kitchens.").slice(0, 88);
+    const rating = Number(rest.rating || 0).toFixed(1);
+
+    return `
+      <article
+        class="restaurant-card"
+        data-name="${rest.name}"
+        data-rating="${rest.rating}"
+        data-price="${rest.price}"
+        onclick="OpenRestaurant(${rest.id})"
+        role="button"
+        tabindex="0"
+        onkeydown="if(event.key==='Enter'){OpenRestaurant(${rest.id})}"
+      >
+        <div class="restaurant-media">
+          <img src="${rest.image}" alt="${rest.name}" loading="lazy" />
+          ${rest.offers ? `<span class="offer-badge">${rest.offers}</span>` : ""}
+          <span class="prep-time-chip"><i class="fa-regular fa-clock"></i> ${rest.prepTime || "25 min"}</span>
         </div>
-      </div>
+
+        <div class="card-body">
+          <div class="card-head">
+            <h3>${rest.name}</h3>
+            <span class="rating-pill"><i class="fa-solid fa-star"></i> ${rating}</span>
+          </div>
+
+          <p class="card-cuisine">${cuisines}</p>
+          <p class="card-about">${aboutText}${aboutText.endsWith(".") ? "" : "..."}</p>
+
+          <div class="card-meta">
+            <span><i class="fa-solid fa-location-dot"></i> ${rest.location}</span>
+            <span><i class="fa-solid fa-indian-rupee-sign"></i> Starts ${FormatINR(rest.price)}</span>
+            <span><i class="fa-solid fa-utensils"></i> ${menuCount} menu items</span>
+          </div>
+
+          <div class="card-footer">
+            <span class="service-tag">Delivery</span>
+            <span class="service-tag">Takeaway</span>
+            <span class="view-action">View Details <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </div>
+      </article>
     `;
   });
+
+  restaurantContainer.innerHTML = cardHtml.join("");
 }
 
 // Open restaurant by id
@@ -82,9 +122,9 @@ function OpenRestaurant(id) {
   window.location.href = "restaurant-detail.html";
 }
 
-function formatINR(value) {
-  return `\u20B9${Number(value || 0).toLocaleString("en-IN")}`;
-}
+// function formatINR(value) {
+//   return `\u20B9${Number(value || 0).toLocaleString("en-IN")}`;
+// }
 
 function renderCuisineBadges(restaurant) {
   const types = [
@@ -148,7 +188,7 @@ async function renderRestaurantDetail() {
         <div class="badges">
           <span class="open"><i class="fa-solid fa-circle-check"></i> Open Now</span>
           <span><i class="fa-solid fa-star"></i> ${restaurant.rating}</span>
-          <span>Starting ${formatINR(restaurant.price)}</span>
+          <span>Starting ${FormatINR(restaurant.price)}</span>
           <span><i class="fa-regular fa-clock"></i> ${restaurant.prepTime || "20-30 mins"}</span>
         </div>
         ${renderCuisineBadges(restaurant)}
@@ -175,7 +215,7 @@ async function renderRestaurantDetail() {
         <h4>${dishName}</h4>
         <p>${item.description || "Freshly prepared with premium ingredients."}</p>
         <div class="dish-footer">
-          <span>${formatINR(dishPrice)}</span>
+          <span>${FormatINR(dishPrice)}</span>
           <button onclick="addToCart('${dishName.replace(/'/g, "\\'")}', ${dishPrice})">Add</button>
         </div>
       </div>
@@ -247,11 +287,11 @@ function renderCart() {
   cartList.innerHTML = "";
   cart.forEach((item) => {
     const li = document.createElement("li");
-    li.textContent = `${item.name} - ${formatINR(item.price)}`;
+    li.textContent = `${item.name} - ${FormatINR(item.price)}`;
     cartList.appendChild(li);
   });
 
-  totalPrice.textContent = formatINR(total);
+  totalPrice.textContent = FormatINR(total);
 }
 
 // Expose functions globally because index.html uses inline onclick handlers
