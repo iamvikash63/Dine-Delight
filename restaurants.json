@@ -271,7 +271,7 @@
     "rating": 4.6,
     "price": "349",
     "prepTime": "25 min",
-    "image": "https://images.unsplash.com/photo-1604908177522-0404c66a6a0d",
+    "image": "images/Restaurant-images/Tunday kababi.jpg",
     "location": "Aminabad, Lucknow",
     "about": "Iconic kebabs and Mughlai flavors with soft rumali rotis.",
     "restype1": "Mughlai",
@@ -340,5 +340,286 @@
         "image": "https://images.unsplash.com/photo-1504754524776-8f4f37790ca0"
       }
     ]
+  },
+
+   {
+    "id": 9,
+    "veg": "veg-image",
+    "non-veg": "non-veg-image",
+    "name": "Classic Restaurant",
+    "rating": 4.4,
+    "price": "399",
+    "prepTime": "25 min",
+    "image": "images/Restaurant-images/Classic Restaurant.jpg",
+    "location": "Hazratganj, Lucknow",
+    "about": "Classic Restaurant - Treat | Pure Veg Restaurant in Lucknow",
+    "restype1": "North Indian",
+    "restype2": "Chinese",
+    "restype3": "Veg",
+    "restype4": "Non Veg",
+    "offers": "Flat 50% OFF on weekdays",
+    "menu": [
+      {
+        "dish": "Dahi Puri",
+        "price": 120,
+        "image": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe"
+      },
+      {
+        "dish": "Chilli Paneer",
+        "price": 220,
+        "image": "https://images.unsplash.com/photo-1543353071-873f17a7a088"
+      },
+      {
+        "dish": "Veg Fried Rice",
+        "price": 180,
+        "image": "https://images.unsplash.com/photo-1473093295043-cdd812d0e601"
+      },
+      {
+        "dish": "Gulab Jamun",
+        "price": 90,
+        "image": "https://images.unsplash.com/photo-1504754524776-8f4f37790ca0"
+      }
+    ]
+  },
+  
+   {
+    "id": 9,
+    "veg": "veg-image",
+    "non-veg": "non-veg-image",
+    "name": "Classic Restaurant",
+    "rating": 4.4,
+    "price": "399",
+    "prepTime": "25 min",
+    "image": "images/Restaurant-images/Classic Restaurant.jpg",
+    "location": "Hazratganj, Lucknow",
+    "about": "Classic Restaurant - Treat | Pure Veg Restaurant in Lucknow",
+    "restype1": "North Indian",
+    "restype2": "Chinese",
+    "restype3": "Veg",
+    "restype4": "Non Veg",
+    "offers": "Flat 50% OFF on weekdays",
+    "menu": [
+      {
+        "dish": "Dahi Puri",
+        "price": 120,
+        "image": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe"
+      },
+      {
+        "dish": "Chilli Paneer",
+        "price": 220,
+        "image": "https://images.unsplash.com/photo-1543353071-873f17a7a088"
+      },
+      {
+        "dish": "Veg Fried Rice",
+        "price": 180,
+        "image": "https://images.unsplash.com/photo-1473093295043-cdd812d0e601"
+      },
+      {
+        "dish": "Gulab Jamun",
+        "price": 90,
+        "image": "https://images.unsplash.com/photo-1504754524776-8f4f37790ca0"
+      }
+    ]
+  },
+  
+   {
+    "id": 9,
+    "veg": "veg-image",
+    "non-veg": "non-veg-image",
+    "name": "Classic Restaurant",
+    "rating": 4.4,
+    "price": "399",
+    "prepTime": "25 min",
+    "image": "images/Restaurant-images/Classic Restaurant.jpg",
+    "location": "Hazratganj, Lucknow",
+    "about": "Classic Restaurant - Treat | Pure Veg Restaurant in Lucknow",
+    "restype1": "North Indian",
+    "restype2": "Chinese",
+    "restype3": "Veg",
+    "restype4": "Non Veg",
+    "offers": "Flat 50% OFF on weekdays",
+    "menu": [
+      {
+        "dish": "Dahi Puri",
+        "price": 120,
+        "image": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe"
+      },
+      {
+        "dish": "Chilli Paneer",
+        "price": 220,
+        "image": "https://images.unsplash.com/photo-1543353071-873f17a7a088"
+      },
+      {
+        "dish": "Veg Fried Rice",
+        "price": 180,
+        "image": "https://images.unsplash.com/photo-1473093295043-cdd812d0e601"
+      },
+      {
+        "dish": "Gulab Jamun",
+        "price": 90,
+        "image": "https://images.unsplash.com/photo-1504754524776-8f4f37790ca0"
+      }
+    ]
+  },
+  
+   {
+    "id": 9,
+    "veg": "veg-image",
+    "non-veg": "non-veg-image",
+    "name": "Classic Restaurant",
+    "rating": 4.4,
+    "price": "399",
+    "prepTime": "25 min",
+    "image": "images/Restaurant-images/Classic Restaurant.jpg",
+    "location": "Hazratganj, Lucknow",
+    "about": "Classic Restaurant - Treat | Pure Veg Restaurant in Lucknow",
+    "restype1": "North Indian",
+    "restype2": "Chinese",
+    "restype3": "Veg",
+    "restype4": "Non Veg",
+    "offers": "Flat 50% OFF on weekdays",
+    "menu": [
+      {
+        "dish": "Dahi Puri",
+        "price": 120,
+        "image": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe"
+      },
+      {
+        "dish": "Chilli Paneer",
+        "price": 220,
+        "image": "https://images.unsplash.com/photo-1543353071-873f17a7a088"
+      },
+      {
+        "dish": "Veg Fried Rice",
+        "price": 180,
+        "image": "https://images.unsplash.com/photo-1473093295043-cdd812d0e601"
+      },
+      {
+        "dish": "Gulab Jamun",
+        "price": 90,
+        "image": "https://images.unsplash.com/photo-1504754524776-8f4f37790ca0"
+      }
+    ]
+  },
+  
+   {
+    "id": 9,
+    "veg": "veg-image",
+    "non-veg": "non-veg-image",
+    "name": "Classic Restaurant",
+    "rating": 4.4,
+    "price": "399",
+    "prepTime": "25 min",
+    "image": "images/Restaurant-images/Classic Restaurant.jpg",
+    "location": "Hazratganj, Lucknow",
+    "about": "Classic Restaurant - Treat | Pure Veg Restaurant in Lucknow",
+    "restype1": "North Indian",
+    "restype2": "Chinese",
+    "restype3": "Veg",
+    "restype4": "Non Veg",
+    "offers": "Flat 50% OFF on weekdays",
+    "menu": [
+      {
+        "dish": "Dahi Puri",
+        "price": 120,
+        "image": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe"
+      },
+      {
+        "dish": "Chilli Paneer",
+        "price": 220,
+        "image": "https://images.unsplash.com/photo-1543353071-873f17a7a088"
+      },
+      {
+        "dish": "Veg Fried Rice",
+        "price": 180,
+        "image": "https://images.unsplash.com/photo-1473093295043-cdd812d0e601"
+      },
+      {
+        "dish": "Gulab Jamun",
+        "price": 90,
+        "image": "https://images.unsplash.com/photo-1504754524776-8f4f37790ca0"
+      }
+    ]
+  },
+  
+   {
+    "id": 9,
+    "veg": "veg-image",
+    "non-veg": "non-veg-image",
+    "name": "Classic Restaurant",
+    "rating": 4.4,
+    "price": "399",
+    "prepTime": "25 min",
+    "image": "images/Restaurant-images/Classic Restaurant.jpg",
+    "location": "Hazratganj, Lucknow",
+    "about": "Classic Restaurant - Treat | Pure Veg Restaurant in Lucknow",
+    "restype1": "North Indian",
+    "restype2": "Chinese",
+    "restype3": "Veg",
+    "restype4": "Non Veg",
+    "offers": "Flat 50% OFF on weekdays",
+    "menu": [
+      {
+        "dish": "Dahi Puri",
+        "price": 120,
+        "image": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe"
+      },
+      {
+        "dish": "Chilli Paneer",
+        "price": 220,
+        "image": "https://images.unsplash.com/photo-1543353071-873f17a7a088"
+      },
+      {
+        "dish": "Veg Fried Rice",
+        "price": 180,
+        "image": "https://images.unsplash.com/photo-1473093295043-cdd812d0e601"
+      },
+      {
+        "dish": "Gulab Jamun",
+        "price": 90,
+        "image": "https://images.unsplash.com/photo-1504754524776-8f4f37790ca0"
+      }
+    ]
+  },
+  
+   {
+    "id": 9,
+    "veg": "veg-image",
+    "non-veg": "non-veg-image",
+    "name": "Classic Restaurant",
+    "rating": 4.4,
+    "price": "399",
+    "prepTime": "25 min",
+    "image": "images/Restaurant-images/Classic Restaurant.jpg",
+    "location": "Hazratganj, Lucknow",
+    "about": "Classic Restaurant - Treat | Pure Veg Restaurant in Lucknow",
+    "restype1": "North Indian",
+    "restype2": "Chinese",
+    "restype3": "Veg",
+    "restype4": "Non Veg",
+    "offers": "Flat 50% OFF on weekdays",
+    "menu": [
+      {
+        "dish": "Dahi Puri",
+        "price": 120,
+        "image": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe"
+      },
+      {
+        "dish": "Chilli Paneer",
+        "price": 220,
+        "image": "https://images.unsplash.com/photo-1543353071-873f17a7a088"
+      },
+      {
+        "dish": "Veg Fried Rice",
+        "price": 180,
+        "image": "https://images.unsplash.com/photo-1473093295043-cdd812d0e601"
+      },
+      {
+        "dish": "Gulab Jamun",
+        "price": 90,
+        "image": "https://images.unsplash.com/photo-1504754524776-8f4f37790ca0"
+      }
+    ]
   }
+
 ]

@@ -18,7 +18,8 @@ async function getlocation() {
   }
 }
 
-function OpenRestaurant(id) {
+
+ export function OpenRestaurant(id) {
   localStorage.setItem("selectedRestaurant", String(id));
   window.location.href = "restaurant-detail.html";
 }

@@ -1,7 +1,7 @@
 import { saveToStorage,getfromStorage } from "../utils/storage.js";
 
 export async function loadRestaurants(){
-    let data = getfromStorage("restaurants");
+    let data;
     if(!data){
         const res=await fetch ("restaurants.json");
         data = await res.json();
