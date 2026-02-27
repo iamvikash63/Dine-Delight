@@ -234,52 +234,136 @@ body {
 }
 
 .hero-stats {
-  margin-top: 4px;
-  width: min(900px, 100%);
+  width: min(960px, 100%);
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 14px;
 }
 
-.hero-stats div {
-  background: #fff;
-  border: 1px solid #f0decb;
-  border-radius: 16px;
-  padding: 12px 10px;
+.hero-stats-primary {
+  margin-top: 6px;
+}
+
+.hero-stats-primary .stat-card {
+  background: linear-gradient(180deg, #ffffff 0%, #fff8ec 100%);
+  border: 1px solid #efdac2;
+  border-radius: 18px;
+  padding: 16px 14px;
+  box-shadow: 0 10px 22px rgba(50, 24, 4, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hero-stats-primary .stat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 26px rgba(50, 24, 4, 0.12);
+}
+
+.stat-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #9e5514;
+  background: #fff1dd;
+  border: 1px solid #f3d7b9;
+  margin-bottom: 10px;
 }
 
 .hero-stats strong {
   display: block;
-  font-size: 1.22rem;
+  font-size: 1.24rem;
+  font-weight: 800;
   color: #7b3908;
 }
 
 .hero-stats span {
-  font-size: 0.85rem;
+  display: block;
+  margin-top: 3px;
+  font-size: 0.86rem;
+  font-weight: 600;
   color: var(--muted);
+}
+
+.hero-stats-primary .stat-card p {
+  margin-top: 8px;
+  color: #8b7a66;
+  font-size: 0.79rem;
+}
+
+.hero-stats-secondary {
+  gap: 12px;
+}
+
+.hero-stats-secondary .stat-chip {
+  background: #fff;
+  border: 1px solid #f0decb;
+  border-radius: 14px;
+  padding: 12px 12px;
+  text-align: left;
+}
+
+.hero-stats-secondary .stat-chip strong {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1rem;
+  color: #85400d;
+}
+
+.hero-stats-secondary .stat-chip span {
+  margin-top: 5px;
+  font-size: 0.82rem;
+  line-height: 1.45;
 }
 
 
 /*restaurant populate section style */
 .Select-options-to-show{
-  width: 100%;
-  height: max-content;
-   padding: 30px 20px;
-   border-top: 1px solid rgb(251, 211, 211);
-   border-radius: 20px;
-   margin-top: 10%;
+  width: min(1160px, 100%);
+  margin: 26px auto 12px;
+  padding: 14px;
+  border: 1px solid #f1dcc3;
+  border-radius: 18px;
+  background: linear-gradient(180deg, #fffdfa 0%, #fff5e8 100%);
+  box-shadow: 0 10px 24px rgba(46, 25, 9, 0.08);
 }
 .Select-options-to-show > ul{
-display: flex;
-gap: 40px;
-margin-left: 10px;
-
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  overflow-x: auto;
+  scrollbar-width: thin;
 }
 .Select-options-to-show > ul li{
   list-style: none;
-  font-size: 1.1rem;
-  font-weight: 600;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #6f5a44;
+  border: 1px solid #f0dcc2;
+  background: #fff;
+  padding: 9px 14px;
+  border-radius: 999px;
+  white-space: nowrap;
+  transition: all 0.22s ease;
   cursor: pointer;
+}
+
+.Select-options-to-show > ul li:hover{
+  color: #f26419;
+  border-color: #f6cda4;
+  background: #fff7ee;
+  transform: translateY(-1px);
+}
+
+.Select-options-to-show > ul li.active{
+  color: #9f480d;
+  border-color: #f3bf90;
+  background: linear-gradient(180deg, #fff1e1 0%, #ffe3c0 100%);
+  box-shadow: 0 8px 14px rgba(242, 100, 25, 0.16);
 }
 
 .Populate-restaurant-section{
@@ -597,23 +681,69 @@ margin-left: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 18px;
+  padding: 14px 16px;
+  margin-bottom: 18px;
+  border: 1px solid #f1dfc9;
+  border-radius: 18px;
+  background: linear-gradient(180deg, #fffdf9 0%, #fff6eb 100%);
+  box-shadow: 0 10px 24px rgba(46, 25, 9, 0.08);
 }
-.Res-section-head-content i{
-  font-size: 1.5rem;
-  cursor: pointer;
- /* border: 1px solid #f3d7b3; */
 
-
+.Res-section-head .section-head-content h4 {
+  margin: 0;
+  font-size: clamp(1.05rem, 2vw, 1.25rem);
+  font-weight: 800;
+  color: #2d1a0b;
+  letter-spacing: 0.1px;
 }
+
 .Res-section-head p {
   color: var(--muted);
-  margin-top: -16px;
-  margin-bottom: 24px;
+  margin: 6px 0 0;
+  font-size: 0.93rem;
 }
 
-.restaurants .Res-section-head p {
-  margin-top: 0;
-  margin-bottom: 18px;
+.Res-section-head-content {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.view-toggle {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  border: 1px solid #efdbc2;
+  background: #fff;
+  color: #8a6644;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.22s ease;
+}
+
+.view-toggle i {
+  font-size: 1rem;
+}
+
+.view-toggle:hover {
+  transform: translateY(-2px);
+  border-color: #f26419;
+  color: #f26419;
+  box-shadow: 0 8px 16px rgba(242, 100, 25, 0.18);
+}
+
+.view-toggle:focus-visible {
+  outline: 3px solid rgba(242, 100, 25, 0.3);
+  outline-offset: 2px;
+}
+
+.view-toggle.active {
+  background: linear-gradient(180deg, #fff4e8 0%, #ffe9d0 100%);
+  color: #b14d10;
+  border-color: #f3cda5;
 }
 
 .best-deals {

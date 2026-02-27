@@ -1,625 +1,974 @@
-﻿[
-  {
-    "id": 1,
-    "veg": "veg-image",
-    "non-veg": "non-veg-image",
-    "name": "Spice Villa",
-    "rating": 4.5,
-    "price": "299",
-    "prepTime": "25 min",
-    "image": "https://images.unsplash.com/photo-1600891964599-f61ba0e24092",
-    "location": "Nishat Ganj, Lucknow",
-    "about": "Spice Villa serves classic North Indian comfort food with fresh gravies and tandoor breads.",
-    "restype1": "North Indian",
-    "restype2": "Chinese",
-    "restype3": "Veg",
-    "restype4": "Non Veg",
-    "offers": "Flat 20% OFF Today",
-    "menu": [
-      {
-        "dish": "Paneer Butter Masala",
-        "price": 220,
-        "image": "https://images.unsplash.com/photo-1525755662778-989d0524087e"
+﻿{
+  "restaurants": [
+    {
+      "id": "1",
+      "name": "Spice Villa",
+      "image": "https://images.unsplash.com/photo-1600891964599-f61ba0e24092",
+      "restaurantTypes": [
+        "North Indian",
+        "Chinese"
+       
+      ],
+      "rating": 4.5,
+      "priceForTwo": 299,
+      "deliveryTime": "25 min",
+      "isOpen": true,
+      "offers": [
+        "Flat 20% OFF Today"
+      ],
+      "location": {
+        "area": "Nishat Ganj",
+        "city": "Lucknow"
       },
-      {
-        "dish": "Dal Makhani",
-        "price": 190,
-        "image": "https://images.unsplash.com/photo-1543353071-873f17a7a088"
+      "foodPreferences": {
+        "veg": false,
+        "nonVeg": true
       },
-      {
-        "dish": "Butter Naan",
-        "price": 40,
-        "image": "https://images.unsplash.com/photo-1601050690597-df0568f70950"
-      },
-      {
-        "dish": "Chicken Tikka",
-        "price": 260,
-        "image": "https://images.unsplash.com/photo-1604908812024-3922f330b631"
-      },
-      {
-        "dish": "Paneer Butter Masala",
-        "price": 220,
-        "image": "https://images.unsplash.com/photo-1525755662778-989d0524087e"
-      },
-      {
-        "dish": "Dal Makhani",
-        "price": 190,
-        "image": "https://images.unsplash.com/photo-1543353071-873f17a7a088"
-      },
-      {
-        "dish": "Butter Naan",
-        "price": 40,
-        "image": "https://images.unsplash.com/photo-1601050690597-df0568f70950"
-      },
-      {
-        "dish": "Chicken Tikka",
-        "price": 260,
-        "image": "https://images.unsplash.com/photo-1604908812024-3922f330b631"
-      }
-    ]
-  },
-  {
-    "id": 2,
-    "veg": "veg-image",
-    "non-veg": "non-veg-image",
-    "name": "Sharma Ji",
-    "rating": 4.2,
-    "price": "199",
-    "prepTime": "20 min",
-    "image": "https://images.unsplash.com/photo-1550547660-d9450f859349",
-    "location": "Hasan Ganj, Lucknow",
-    "about": "Local favorite for quick bites, burgers, rolls, and crispy sides.",
-    "restype1": "Street Food",
-    "restype2": "Fast Food",
-    "restype3": "Veg",
-    "restype4": "Non Veg",
-    "offers": "Buy 1 Get 1 on Burgers",
-    "menu": [
-      {
-        "dish": "Veg Burger",
-        "price": 120,
-        "image": "https://images.unsplash.com/photo-1550547660-d9450f859349"
-      },
-      {
-        "dish": "Chicken Burger",
-        "price": 150,
-        "image": "https://images.unsplash.com/photo-1610970878451-6f8bca0f7b74"
-      },
-      {
-        "dish": "Cheese Fries",
-        "price": 90,
-        "image": "https://images.unsplash.com/photo-1499028344343-cd173ffc68a9"
-      },
-      {
-        "dish": "Veg Wrap",
-        "price": 110,
-        "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836"
-      },
+      "description": "Spice Villa serves classic North Indian comfort food with fresh gravies and tandoor breads.",
+      "menuItems": [
         {
-        "dish": "Veg Wrap",
-        "price": 110,
-        "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836"
-      },
+          "itemId": "item_1_001",
+          "name": "Paneer Butter Masala",
+          "price": 220,
+          "isVeg": false,
+          "image": "https://images.unsplash.com/photo-1525755662778-989d0524087e",
+          "description": "Freshly prepared with premium ingredients."
+        },
         {
-        "dish": "Veg Wrap",
-        "price": 110,
-        "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836"
-      }
-    ]
-  },
-  {
-    "id": 3,
-    "veg": "veg-image",
-    "non-veg": "non-veg-image",
-    "name": "Urban Bites",
-    "rating": 4.3,
-    "price": "499",
-    "prepTime": "30 min",
-    "image": "https://images.unsplash.com/photo-1525755662778-989d0524087e",
-    "location": "Gomti Nagar, Lucknow",
-    "about": "Trendy cafe with bowls, sandwiches, and light continental plates.",
-    "restype1": "Cafe",
-    "restype2": "Continental",
-    "restype3": "Veg",
-    "restype4": "Non Veg",
-    "offers": "Free dessert on orders above 799",
-    "menu": [
-      {
-        "dish": "Grilled Veg Sandwich",
-        "price": 180,
-        "image": "https://images.unsplash.com/photo-1550507992-eb63ffee0847"
+          "itemId": "item_1_002",
+          "name": "Dal Makhani",
+          "price": 190,
+          "isVeg": false,
+          "image": "https://images.unsplash.com/photo-1543353071-873f17a7a088",
+          "description": "Freshly prepared with premium ingredients."
+        },
+        {
+          "itemId": "item_1_003",
+          "name": "Butter Naan",
+          "price": 40,
+          "isVeg": false,
+          "image": "https://images.unsplash.com/photo-1601050690597-df0568f70950",
+          "description": "Freshly prepared with premium ingredients."
+        },
+        {
+          "itemId": "item_1_004",
+          "name": "Chicken Tikka",
+          "price": 260,
+          "isVeg": false,
+          "image": "https://images.unsplash.com/photo-1604908812024-3922f330b631",
+          "description": "Freshly prepared with premium ingredients."
+        },
+        {
+          "itemId": "item_1_005",
+          "name": "Paneer Butter Masala",
+          "price": 220,
+          "isVeg": false,
+          "image": "https://images.unsplash.com/photo-1525755662778-989d0524087e",
+          "description": "Freshly prepared with premium ingredients."
+        },
+        {
+          "itemId": "item_1_006",
+          "name": "Dal Makhani",
+          "price": 190,
+          "isVeg": false,
+          "image": "https://images.unsplash.com/photo-1543353071-873f17a7a088",
+          "description": "Freshly prepared with premium ingredients."
+        },
+        {
+          "itemId": "item_1_007",
+          "name": "Butter Naan",
+          "price": 40,
+          "isVeg": false,
+          "image": "https://images.unsplash.com/photo-1601050690597-df0568f70950",
+          "description": "Freshly prepared with premium ingredients."
+        },
+        {
+          "itemId": "item_1_008",
+          "name": "Chicken Tikka",
+          "price": 260,
+          "isVeg": false,
+          "image": "https://images.unsplash.com/photo-1604908812024-3922f330b631",
+          "description": "Freshly prepared with premium ingredients."
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Sharma Ji",
+      "image": "https://images.unsplash.com/photo-1550547660-d9450f859349",
+      "restaurantTypes": [
+        "Street Food",
+        "Fast Food",
+        "Veg",
+        "Non Veg"
+      ],
+      "rating": 4.2,
+      "priceForTwo": 199,
+      "deliveryTime": "20 min",
+      "isOpen": true,
+      "offers": [
+        "Buy 1 Get 1 on Burgers"
+      ],
+      "location": {
+        "area": "Hasan Ganj",
+        "city": "Lucknow"
       },
-      {
-        "dish": "Pasta Alfredo",
-        "price": 260,
-        "image": "https://images.unsplash.com/photo-1521389508051-d7ffb5dc8b91"
+      "foodPreferences": {
+        "veg": true,
+        "nonVeg": true
       },
-      {
-        "dish": "Chicken Caesar Salad",
-        "price": 240,
-        "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd"
+      "description": "Local favorite for quick bites, burgers, rolls, and crispy sides.",
+      "menuItems": [
+        {
+          "itemId": "item_2_001",
+          "name": "Veg Burger",
+          "price": 120,
+          "isVeg": false,
+          "image": "https://images.unsplash.com/photo-1550547660-d9450f859349",
+          "description": "Freshly prepared with premium ingredients."
+        },
+        {
+          "itemId": "item_2_002",
+          "name": "Chicken Burger",
+          "price": 150,
+          "isVeg": false,
+          "image": "https://images.unsplash.com/photo-1610970878451-6f8bca0f7b74",
+          "description": "Freshly prepared with premium ingredients."
+        },
+        {
+          "itemId": "item_2_003",
+          "name": "Cheese Fries",
+          "price": 90,
+          "isVeg": false,
+          "image": "https://images.unsplash.com/photo-1499028344343-cd173ffc68a9",
+          "description": "Freshly prepared with premium ingredients."
+        },
+        {
+          "itemId": "item_2_004",
+          "name": "Veg Wrap",
+          "price": 110,
+          "isVeg": false,
+          "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836",
+          "description": "Freshly prepared with premium ingredients."
+        },
+        {
+          "itemId": "item_2_005",
+          "name": "Veg Wrap",
+          "price": 110,
+          "isVeg": false,
+          "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836",
+          "description": "Freshly prepared with premium ingredients."
+        },
+        {
+          "itemId": "item_2_006",
+          "name": "Veg Wrap",
+          "price": 110,
+          "isVeg": false,
+          "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836",
+          "description": "Freshly prepared with premium ingredients."
+        },
+         {
+          "itemId": "item_2_006",
+          "name": "Veg Wrap",
+          "price": 110,
+          "isVeg": false,
+          "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836",
+          "description": "Freshly prepared with premium ingredients."
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Urban Bites",
+      "image": "https://images.unsplash.com/photo-1525755662778-989d0524087e",
+      "restaurantTypes": [
+        "Cafe",
+        "Continental",
+        "Veg",
+        "Non Veg"
+      ],
+      "rating": 4.3,
+      "priceForTwo": 499,
+      "deliveryTime": "30 min",
+      "isOpen": true,
+      "offers": [
+        "Free dessert on orders above 799"
+      ],
+      "location": {
+        "area": "Gomti Nagar",
+        "city": "Lucknow"
       },
-      {
-        "dish": "Cold Coffee",
-        "price": 150,
-        "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93"
-      }
-    ]
-  },
-  {
-    "id": 4,
-    "veg": "veg-image",
-    "non-veg": "non-veg-image",
-    "name": "Domino's",
-    "rating": 4.2,
-    "price": "499",
-    "prepTime": "25 min",
-    "image": "images/Restaurant-images/Dominoz.jpg",
-    "location": "Lucknow Vishwavidyalay Metro Station, Lucknow",
-    "about": "Classic pizzas, sides, and desserts with quick delivery.",
-    "restype1": "Pizza",
-    "restype2": "Fast Food",
-    "restype3": "Veg",
-    "restype4": "Non Veg",
-    "offers": "Flat 30% OFF on Family Pizzas",
-    "menu": [
-      {
-        "dish": "Margherita Pizza",
-        "price": 199,
-        "image": "https://images.unsplash.com/photo-1548365328-8b849e6f3f3c"
+      "foodPreferences": {
+        "veg": true,
+        "nonVeg": true
       },
-      {
-        "dish": "Farmhouse Pizza",
-        "price": 299,
-        "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591"
+      "description": "Trendy cafe with bowls, sandwiches, and light continental plates.",
+      "menuItems": [
+        {
+          "itemId": "item_3_001",
+          "name": "Grilled Veg Sandwich",
+          "price": 180,
+          "isVeg": false,
+          "image": "https://images.unsplash.com/photo-1550507992-eb63ffee0847",
+          "description": "Freshly prepared with premium ingredients."
+        },
+        {
+          "itemId": "item_3_002",
+          "name": "Pasta Alfredo",
+          "price": 260,
+          "isVeg": false,
+          "image": "https://images.unsplash.com/photo-1521389508051-d7ffb5dc8b91",
+          "description": "Freshly prepared with premium ingredients."
+        },
+        {
+          "itemId": "item_3_003",
+          "name": "Chicken Caesar Salad",
+          "price": 240,
+          "isVeg": false,
+          "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd",
+          "description": "Freshly prepared with premium ingredients."
+        },
+        {
+          "itemId": "item_3_004",
+          "name": "Cold Coffee",
+          "price": 150,
+          "isVeg": false,
+          "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93",
+          "description": "Freshly prepared with premium ingredients."
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Domino\u0027s",
+      "image": "images/Restaurant-images/Dominoz.jpg",
+      "restaurantTypes": [
+        "Pizza",
+        "Fast Food",
+        "Veg",
+        "Non Veg"
+      ],
+      "rating": 4.2,
+      "priceForTwo": 499,
+      "deliveryTime": "25 min",
+      "isOpen": true,
+      "offers": [
+        "Flat 30% OFF on Family Pizzas"
+      ],
+      "location": {
+        "area": "Lucknow Vishwavidyalay Metro Station",
+        "city": "Lucknow"
       },
-      {
-        "dish": "Pepper Chicken Pizza",
-        "price": 349,
-        "image": "https://images.unsplash.com/photo-1541592106381-b31e9677c0e5"
+      "foodPreferences": {
+        "veg": true,
+        "nonVeg": true
       },
-      {
-        "dish": "Garlic Bread",
-        "price": 129,
-        "image": "https://images.unsplash.com/photo-1498837167922-ddd27525d352"
-      }
-    ]
-  },
-  {
-    "id": 5,
-    "veg": "veg-image",
-    "non-veg": "non-veg-image",
-    "name": "KFC",
-    "rating": 4.1,
-    "price": "499",
-    "prepTime": "25 min",
-    "image": "images/Restaurant-images/KFC.jpg",
-    "location": "Fun Mall, Lohiya Path, Gomti Nagar, Lucknow",
-    "about": "Crispy fried chicken, burgers, and combo meals.",
-    "restype1": "Fast Food",
-    "restype2": "American",
-    "restype3": "Veg",
-    "restype4": "Non Veg",
-    "offers": "Combo Meals from 299",
-    "menu": [
-      {
-        "dish": "Hot and Crispy Chicken",
-        "price": 199,
-        "image": "https://images.unsplash.com/photo-1604908177522-0404c66a6a0d"
+      "description": "Classic pizzas, sides, and desserts with quick delivery.",
+      "menuItems": [
+        {
+          "itemId": "item_4_001",
+          "name": "Margherita Pizza",
+          "price": 199,
+          "isVeg": false,
+          "image": "https://images.unsplash.com/photo-1548365328-8b849e6f3f3c",
+          "description": "Freshly prepared with premium ingredients."
+        },
+        {
+          "itemId": "item_4_002",
+          "name": "Farmhouse Pizza",
+          "price": 299,
+          "isVeg": false,
+          "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591",
+          "description": "Freshly prepared with premium ingredients."
+        },
+        {
+          "itemId": "item_4_003",
+          "name": "Pepper Chicken Pizza",
+          "price": 349,
+          "isVeg": false,
+          "image": "https://images.unsplash.com/photo-1541592106381-b31e9677c0e5",
+          "description": "Freshly prepared with premium ingredients."
+        },
+        {
+          "itemId": "item_4_004",
+          "name": "Garlic Bread",
+          "price": 129,
+          "isVeg": false,
+          "image": "https://images.unsplash.com/photo-1498837167922-ddd27525d352",
+          "description": "Freshly prepared with premium ingredients."
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "name": "KFC",
+      "image": "images/Restaurant-images/KFC.jpg",
+      "restaurantTypes": [
+        "Fast Food",
+        "American",
+        "Veg",
+        "Non Veg"
+      ],
+      "rating": 4.1,
+      "priceForTwo": 499,
+      "deliveryTime": "25 min",
+      "isOpen": true,
+      "offers": [
+        "Combo Meals from 299"
+      ],
+      "location": {
+        "area": "Fun Mall",
+        "city": "Lohiya Path"
       },
-      {
-        "dish": "Zinger Burger",
-        "price": 170,
-        "image": "https://images.unsplash.com/photo-1550547660-d9450f859349"
+      "foodPreferences": {
+        "veg": true,
+        "nonVeg": true
       },
-      {
-        "dish": "Chicken Popcorn",
-        "price": 159,
-        "image": "https://images.unsplash.com/photo-1604908812024-3922f330b631"
+      "description": "Crispy fried chicken, burgers, and combo meals.",
+      "menuItems": [
+        {
+          "itemId": "item_5_001",
+          "name": "Hot and Crispy Chicken",
+          "price": 199,
+          "isVeg": false,
+          "image": "https://images.unsplash.com/photo-1604908177522-0404c66a6a0d",
+          "description": "Freshly prepared with premium ingredients."
+        },
+        {
+          "itemId": "item_5_002",
+          "name": "Zinger Burger",
+          "price": 170,
+          "isVeg": false,
+          "image": "https://images.unsplash.com/photo-1550547660-d9450f859349",
+          "description": "Freshly prepared with premium ingredients."
+        },
+        {
+          "itemId": "item_5_003",
+          "name": "Chicken Popcorn",
+          "price": 159,
+          "isVeg": false,
+          "image": "https://images.unsplash.com/photo-1604908812024-3922f330b631",
+          "description": "Freshly prepared with premium ingredients."
+        },
+        {
+          "itemId": "item_5_004",
+          "name": "Pepsi 475 ml",
+          "price": 60,
+          "isVeg": false,
+          "image": "https://images.unsplash.com/photo-1527169402691-feff5539e52c",
+          "description": "Freshly prepared with premium ingredients."
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "name": "Wow Momo",
+      "image": "images/Restaurant-images/wow-momo.jpg",
+      "restaurantTypes": [
+        "Momos",
+        "Asian",
+        "Veg",
+        "Non Veg"
+      ],
+      "rating": 4,
+      "priceForTwo": 399,
+      "deliveryTime": "20 min",
+      "isOpen": true,
+      "offers": [
+        "Free drink on orders above 499"
+      ],
+      "location": {
+        "area": "Fun Mall",
+        "city": "Lohiya Path"
       },
-      {
-        "dish": "Pepsi 475 ml",
-        "price": 60,
-        "image": "https://images.unsplash.com/photo-1527169402691-feff5539e52c"
-      }
-    ]
-  },
-  {
-    "id": 6,
-    "veg": "veg-image",
-    "non-veg": "non-veg-image",
-    "name": "Wow Momo",
-    "rating": 4.0,
-    "price": "399",
-    "prepTime": "20 min",
-    "image": "images/Restaurant-images/wow-momo.jpg",
-    "location": "Fun Mall, Lohiya Path, Gomti Nagar, Lucknow",
-    "about": "Steamed, fried, and pan-fried momos with spicy chutneys.",
-    "restype1": "Momos",
-    "restype2": "Asian",
-    "restype3": "Veg",
-    "restype4": "Non Veg",
-    "offers": "Free drink on orders above 499",
-    "menu": [
-      {
-        "dish": "Veg Steam Momo",
-        "price": 120,
-        "image": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe"
+      "foodPreferences": {
+        "veg": true,
+        "nonVeg": true
       },
-      {
-        "dish": "Chicken Fried Momo",
-        "price": 160,
-        "image": "https://images.unsplash.com/photo-1498654896293-37aacf113fd9"
+      "description": "Steamed, fried, and pan-fried momos with spicy chutneys.",
+      "menuItems": [
+        {
+          "itemId": "item_6_001",
+          "name": "Veg Steam Momo",
+          "price": 120,
+          "isVeg": false,
+          "image": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe",
+          "description": "Freshly prepared with premium ingredients."
+        },
+        {
+          "itemId": "item_6_002",
+          "name": "Chicken Fried Momo",
+          "price": 160,
+          "isVeg": false,
+          "image": "https://images.unsplash.com/photo-1498654896293-37aacf113fd9",
+          "description": "Freshly prepared with premium ingredients."
+        },
+        {
+          "itemId": "item_6_003",
+          "name": "Paneer Tandoori Momo",
+          "price": 170,
+          "isVeg": false,
+          "image": "https://images.unsplash.com/photo-1525755662778-989d0524087e",
+          "description": "Freshly prepared with premium ingredients."
+        },
+        {
+          "itemId": "item_6_004",
+          "name": "Chicken Thukpa",
+          "price": 190,
+          "isVeg": false,
+          "image": "https://images.unsplash.com/photo-1473093295043-cdd812d0e601",
+          "description": "Freshly prepared with premium ingredients."
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "name": "Tunday Kababi",
+      "image": "images/Restaurant-images/Tunday kababi.jpg",
+      "restaurantTypes": [
+        "Mughlai",
+        "North Indian",
+        "Veg",
+        "Non Veg"
+      ],
+      "rating": 4.6,
+      "priceForTwo": 349,
+      "deliveryTime": "25 min",
+      "isOpen": true,
+      "offers": [
+        "Flat 15% OFF on kebab platters"
+      ],
+      "location": {
+        "area": "Aminabad",
+        "city": "Lucknow"
       },
-      {
-        "dish": "Paneer Tandoori Momo",
-        "price": 170,
-        "image": "https://images.unsplash.com/photo-1525755662778-989d0524087e"
+      "foodPreferences": {
+        "veg": true,
+        "nonVeg": true
       },
-      {
-        "dish": "Chicken Thukpa",
-        "price": 190,
-        "image": "https://images.unsplash.com/photo-1473093295043-cdd812d0e601"
-      }
-    ]
-  },
-  {
-    "id": 7,
-    "veg": "veg-image",
-    "non-veg": "non-veg-image",
-    "name": "Tunday Kababi",
-    "rating": 4.6,
-    "price": "349",
-    "prepTime": "25 min",
-    "image": "images/Restaurant-images/Tunday kababi.jpg",
-    "location": "Aminabad, Lucknow",
-    "about": "Iconic kebabs and Mughlai flavors with soft rumali rotis.",
-    "restype1": "Mughlai",
-    "restype2": "North Indian",
-    "restype3": "Veg",
-    "restype4": "Non Veg",
-    "offers": "Flat 15% OFF on kebab platters",
-    "menu": [
-      {
-        "dish": "Galouti Kebab",
-        "price": 240,
-        "image": "https://images.unsplash.com/photo-1512058564366-18510be2db19"
+      "description": "Iconic kebabs and Mughlai flavors with soft rumali rotis.",
+      "menuItems": [
+        {
+          "itemId": "item_7_001",
+          "name": "Galouti Kebab",
+          "price": 240,
+          "isVeg": false,
+          "image": "https://images.unsplash.com/photo-1512058564366-18510be2db19",
+          "description": "Freshly prepared with premium ingredients."
+        },
+        {
+          "itemId": "item_7_002",
+          "name": "Chicken Biryani",
+          "price": 260,
+          "isVeg": false,
+          "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836",
+          "description": "Freshly prepared with premium ingredients."
+        },
+        {
+          "itemId": "item_7_003",
+          "name": "Rumali Roti",
+          "price": 20,
+          "isVeg": false,
+          "image": "https://images.unsplash.com/photo-1601050690597-df0568f70950",
+          "description": "Freshly prepared with premium ingredients."
+        },
+        {
+          "itemId": "item_7_004",
+          "name": "Shami Kebab",
+          "price": 210,
+          "isVeg": false,
+          "image": "https://images.unsplash.com/photo-1604908812024-3922f330b631",
+          "description": "Freshly prepared with premium ingredients."
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "name": "Royal Cafe",
+      "image": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0",
+      "restaurantTypes": [
+        "North Indian",
+        "Chinese",
+        "Veg",
+        "Non Veg"
+      ],
+      "rating": 4.4,
+      "priceForTwo": 399,
+      "deliveryTime": "25 min",
+      "isOpen": true,
+      "offers": [
+        "Flat 25% OFF on weekdays"
+      ],
+      "location": {
+        "area": "Hazratganj",
+        "city": "Lucknow"
       },
-      {
-        "dish": "Chicken Biryani",
-        "price": 260,
-        "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836"
+      "foodPreferences": {
+        "veg": true,
+        "nonVeg": true
       },
-      {
-        "dish": "Rumali Roti",
-        "price": 20,
-        "image": "https://images.unsplash.com/photo-1601050690597-df0568f70950"
+      "description": "Multi-cuisine dining with North Indian, Chinese, and chaat.",
+      "menuItems": [
+        {
+          "itemId": "item_8_001",
+          "name": "Dahi Puri",
+          "price": 120,
+          "isVeg": false,
+          "image": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe",
+          "description": "Freshly prepared with premium ingredients."
+        },
+        {
+          "itemId": "item_8_002",
+          "name": "Chilli Paneer",
+          "price": 220,
+          "isVeg": false,
+          "image": "https://images.unsplash.com/photo-1543353071-873f17a7a088",
+          "description": "Freshly prepared with premium ingredients."
+        },
+        {
+          "itemId": "item_8_003",
+          "name": "Veg Fried Rice",
+          "price": 180,
+          "isVeg": false,
+          "image": "https://images.unsplash.com/photo-1473093295043-cdd812d0e601",
+          "description": "Freshly prepared with premium ingredients."
+        },
+        {
+          "itemId": "item_8_004",
+          "name": "Gulab Jamun",
+          "price": 90,
+          "isVeg": false,
+          "image": "https://images.unsplash.com/photo-1504754524776-8f4f37790ca0",
+          "description": "Freshly prepared with premium ingredients."
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "name": "Classic Restaurant",
+      "image": "images/Restaurant-images/Classic Restaurant.jpg",
+      "restaurantTypes": [
+        "North Indian",
+        "Chinese",
+        "Veg",
+        "Non Veg"
+      ],
+      "rating": 4.4,
+      "priceForTwo": 399,
+      "deliveryTime": "25 min",
+      "isOpen": true,
+      "offers": [
+        "Flat 50% OFF on weekdays"
+      ],
+      "location": {
+        "area": "Hazratganj",
+        "city": "Lucknow"
       },
-      {
-        "dish": "Shami Kebab",
-        "price": 210,
-        "image": "https://images.unsplash.com/photo-1604908812024-3922f330b631"
-      }
-    ]
-  },
-  {
-    "id": 8,
-    "veg": "veg-image",
-    "non-veg": "non-veg-image",
-    "name": "Royal Cafe",
-    "rating": 4.4,
-    "price": "399",
-    "prepTime": "25 min",
-    "image": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0",
-    "location": "Hazratganj, Lucknow",
-    "about": "Multi-cuisine dining with North Indian, Chinese, and chaat.",
-    "restype1": "North Indian",
-    "restype2": "Chinese",
-    "restype3": "Veg",
-    "restype4": "Non Veg",
-    "offers": "Flat 25% OFF on weekdays",
-    "menu": [
-      {
-        "dish": "Dahi Puri",
-        "price": 120,
-        "image": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe"
+      "foodPreferences": {
+        "veg": true,
+        "nonVeg": true
       },
-      {
-        "dish": "Chilli Paneer",
-        "price": 220,
-        "image": "https://images.unsplash.com/photo-1543353071-873f17a7a088"
+      "description": "Classic Restaurant - Treat | Pure Veg Restaurant in Lucknow",
+      "menuItems": [
+        {
+          "itemId": "item_9_001",
+          "name": "Dahi Puri",
+          "price": 120,
+          "isVeg": false,
+          "image": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe",
+          "description": "Freshly prepared with premium ingredients."
+        },
+        {
+          "itemId": "item_9_002",
+          "name": "Chilli Paneer",
+          "price": 220,
+          "isVeg": false,
+          "image": "https://images.unsplash.com/photo-1543353071-873f17a7a088",
+          "description": "Freshly prepared with premium ingredients."
+        },
+        {
+          "itemId": "item_9_003",
+          "name": "Veg Fried Rice",
+          "price": 180,
+          "isVeg": false,
+          "image": "https://images.unsplash.com/photo-1473093295043-cdd812d0e601",
+          "description": "Freshly prepared with premium ingredients."
+        },
+        {
+          "itemId": "item_9_004",
+          "name": "Gulab Jamun",
+          "price": 90,
+          "isVeg": false,
+          "image": "https://images.unsplash.com/photo-1504754524776-8f4f37790ca0",
+          "description": "Freshly prepared with premium ingredients."
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "name": "Classic Restaurant",
+      "image": "images/Restaurant-images/Classic Restaurant.jpg",
+      "restaurantTypes": [
+        "North Indian",
+        "Chinese",
+        "Veg",
+        "Non Veg"
+      ],
+      "rating": 4.4,
+      "priceForTwo": 399,
+      "deliveryTime": "25 min",
+      "isOpen": true,
+      "offers": [
+        "Flat 50% OFF on weekdays"
+      ],
+      "location": {
+        "area": "Hazratganj",
+        "city": "Lucknow"
       },
-      {
-        "dish": "Veg Fried Rice",
-        "price": 180,
-        "image": "https://images.unsplash.com/photo-1473093295043-cdd812d0e601"
+      "foodPreferences": {
+        "veg": true,
+        "nonVeg": true
       },
-      {
-        "dish": "Gulab Jamun",
-        "price": 90,
-        "image": "https://images.unsplash.com/photo-1504754524776-8f4f37790ca0"
-      }
-    ]
-  },
-
-   {
-    "id": 9,
-    "veg": "veg-image",
-    "non-veg": "non-veg-image",
-    "name": "Classic Restaurant",
-    "rating": 4.4,
-    "price": "399",
-    "prepTime": "25 min",
-    "image": "images/Restaurant-images/Classic Restaurant.jpg",
-    "location": "Hazratganj, Lucknow",
-    "about": "Classic Restaurant - Treat | Pure Veg Restaurant in Lucknow",
-    "restype1": "North Indian",
-    "restype2": "Chinese",
-    "restype3": "Veg",
-    "restype4": "Non Veg",
-    "offers": "Flat 50% OFF on weekdays",
-    "menu": [
-      {
-        "dish": "Dahi Puri",
-        "price": 120,
-        "image": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe"
+      "description": "Classic Restaurant - Treat | Pure Veg Restaurant in Lucknow",
+      "menuItems": [
+        {
+          "itemId": "item_9_001",
+          "name": "Dahi Puri",
+          "price": 120,
+          "isVeg": false,
+          "image": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe",
+          "description": "Freshly prepared with premium ingredients."
+        },
+        {
+          "itemId": "item_9_002",
+          "name": "Chilli Paneer",
+          "price": 220,
+          "isVeg": false,
+          "image": "https://images.unsplash.com/photo-1543353071-873f17a7a088",
+          "description": "Freshly prepared with premium ingredients."
+        },
+        {
+          "itemId": "item_9_003",
+          "name": "Veg Fried Rice",
+          "price": 180,
+          "isVeg": false,
+          "image": "https://images.unsplash.com/photo-1473093295043-cdd812d0e601",
+          "description": "Freshly prepared with premium ingredients."
+        },
+        {
+          "itemId": "item_9_004",
+          "name": "Gulab Jamun",
+          "price": 90,
+          "isVeg": false,
+          "image": "https://images.unsplash.com/photo-1504754524776-8f4f37790ca0",
+          "description": "Freshly prepared with premium ingredients."
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "name": "Classic Restaurant",
+      "image": "images/Restaurant-images/Classic Restaurant.jpg",
+      "restaurantTypes": [
+        "North Indian",
+        "Chinese",
+        "Veg",
+        "Non Veg"
+      ],
+      "rating": 4.4,
+      "priceForTwo": 399,
+      "deliveryTime": "25 min",
+      "isOpen": true,
+      "offers": [
+        "Flat 50% OFF on weekdays"
+      ],
+      "location": {
+        "area": "Hazratganj",
+        "city": "Lucknow"
       },
-      {
-        "dish": "Chilli Paneer",
-        "price": 220,
-        "image": "https://images.unsplash.com/photo-1543353071-873f17a7a088"
+      "foodPreferences": {
+        "veg": true,
+        "nonVeg": true
       },
-      {
-        "dish": "Veg Fried Rice",
-        "price": 180,
-        "image": "https://images.unsplash.com/photo-1473093295043-cdd812d0e601"
+      "description": "Classic Restaurant - Treat | Pure Veg Restaurant in Lucknow",
+      "menuItems": [
+        {
+          "itemId": "item_9_001",
+          "name": "Dahi Puri",
+          "price": 120,
+          "isVeg": false,
+          "image": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe",
+          "description": "Freshly prepared with premium ingredients."
+        },
+        {
+          "itemId": "item_9_002",
+          "name": "Chilli Paneer",
+          "price": 220,
+          "isVeg": false,
+          "image": "https://images.unsplash.com/photo-1543353071-873f17a7a088",
+          "description": "Freshly prepared with premium ingredients."
+        },
+        {
+          "itemId": "item_9_003",
+          "name": "Veg Fried Rice",
+          "price": 180,
+          "isVeg": false,
+          "image": "https://images.unsplash.com/photo-1473093295043-cdd812d0e601",
+          "description": "Freshly prepared with premium ingredients."
+        },
+        {
+          "itemId": "item_9_004",
+          "name": "Gulab Jamun",
+          "price": 90,
+          "isVeg": false,
+          "image": "https://images.unsplash.com/photo-1504754524776-8f4f37790ca0",
+          "description": "Freshly prepared with premium ingredients."
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "name": "Classic Restaurant",
+      "image": "images/Restaurant-images/Classic Restaurant.jpg",
+      "restaurantTypes": [
+        "North Indian",
+        "Chinese",
+        "Veg",
+        "Non Veg"
+      ],
+      "rating": 4.4,
+      "priceForTwo": 399,
+      "deliveryTime": "25 min",
+      "isOpen": true,
+      "offers": [
+        "Flat 50% OFF on weekdays"
+      ],
+      "location": {
+        "area": "Hazratganj",
+        "city": "Lucknow"
       },
-      {
-        "dish": "Gulab Jamun",
-        "price": 90,
-        "image": "https://images.unsplash.com/photo-1504754524776-8f4f37790ca0"
-      }
-    ]
-  },
-  
-   {
-    "id": 9,
-    "veg": "veg-image",
-    "non-veg": "non-veg-image",
-    "name": "Classic Restaurant",
-    "rating": 4.4,
-    "price": "399",
-    "prepTime": "25 min",
-    "image": "images/Restaurant-images/Classic Restaurant.jpg",
-    "location": "Hazratganj, Lucknow",
-    "about": "Classic Restaurant - Treat | Pure Veg Restaurant in Lucknow",
-    "restype1": "North Indian",
-    "restype2": "Chinese",
-    "restype3": "Veg",
-    "restype4": "Non Veg",
-    "offers": "Flat 50% OFF on weekdays",
-    "menu": [
-      {
-        "dish": "Dahi Puri",
-        "price": 120,
-        "image": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe"
+      "foodPreferences": {
+        "veg": true,
+        "nonVeg": true
       },
-      {
-        "dish": "Chilli Paneer",
-        "price": 220,
-        "image": "https://images.unsplash.com/photo-1543353071-873f17a7a088"
+      "description": "Classic Restaurant - Treat | Pure Veg Restaurant in Lucknow",
+      "menuItems": [
+        {
+          "itemId": "item_9_001",
+          "name": "Dahi Puri",
+          "price": 120,
+          "isVeg": false,
+          "image": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe",
+          "description": "Freshly prepared with premium ingredients."
+        },
+        {
+          "itemId": "item_9_002",
+          "name": "Chilli Paneer",
+          "price": 220,
+          "isVeg": false,
+          "image": "https://images.unsplash.com/photo-1543353071-873f17a7a088",
+          "description": "Freshly prepared with premium ingredients."
+        },
+        {
+          "itemId": "item_9_003",
+          "name": "Veg Fried Rice",
+          "price": 180,
+          "isVeg": false,
+          "image": "https://images.unsplash.com/photo-1473093295043-cdd812d0e601",
+          "description": "Freshly prepared with premium ingredients."
+        },
+        {
+          "itemId": "item_9_004",
+          "name": "Gulab Jamun",
+          "price": 90,
+          "isVeg": false,
+          "image": "https://images.unsplash.com/photo-1504754524776-8f4f37790ca0",
+          "description": "Freshly prepared with premium ingredients."
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "name": "Classic Restaurant",
+      "image": "images/Restaurant-images/Classic Restaurant.jpg",
+      "restaurantTypes": [
+        "North Indian",
+        "Chinese",
+        "Veg",
+        "Non Veg"
+      ],
+      "rating": 4.4,
+      "priceForTwo": 399,
+      "deliveryTime": "25 min",
+      "isOpen": true,
+      "offers": [
+        "Flat 50% OFF on weekdays"
+      ],
+      "location": {
+        "area": "Hazratganj",
+        "city": "Lucknow"
       },
-      {
-        "dish": "Veg Fried Rice",
-        "price": 180,
-        "image": "https://images.unsplash.com/photo-1473093295043-cdd812d0e601"
+      "foodPreferences": {
+        "veg": true,
+        "nonVeg": true
       },
-      {
-        "dish": "Gulab Jamun",
-        "price": 90,
-        "image": "https://images.unsplash.com/photo-1504754524776-8f4f37790ca0"
-      }
-    ]
-  },
-  
-   {
-    "id": 9,
-    "veg": "veg-image",
-    "non-veg": "non-veg-image",
-    "name": "Classic Restaurant",
-    "rating": 4.4,
-    "price": "399",
-    "prepTime": "25 min",
-    "image": "images/Restaurant-images/Classic Restaurant.jpg",
-    "location": "Hazratganj, Lucknow",
-    "about": "Classic Restaurant - Treat | Pure Veg Restaurant in Lucknow",
-    "restype1": "North Indian",
-    "restype2": "Chinese",
-    "restype3": "Veg",
-    "restype4": "Non Veg",
-    "offers": "Flat 50% OFF on weekdays",
-    "menu": [
-      {
-        "dish": "Dahi Puri",
-        "price": 120,
-        "image": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe"
+      "description": "Classic Restaurant - Treat | Pure Veg Restaurant in Lucknow",
+      "menuItems": [
+        {
+          "itemId": "item_9_001",
+          "name": "Dahi Puri",
+          "price": 120,
+          "isVeg": false,
+          "image": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe",
+          "description": "Freshly prepared with premium ingredients."
+        },
+        {
+          "itemId": "item_9_002",
+          "name": "Chilli Paneer",
+          "price": 220,
+          "isVeg": false,
+          "image": "https://images.unsplash.com/photo-1543353071-873f17a7a088",
+          "description": "Freshly prepared with premium ingredients."
+        },
+        {
+          "itemId": "item_9_003",
+          "name": "Veg Fried Rice",
+          "price": 180,
+          "isVeg": false,
+          "image": "https://images.unsplash.com/photo-1473093295043-cdd812d0e601",
+          "description": "Freshly prepared with premium ingredients."
+        },
+        {
+          "itemId": "item_9_004",
+          "name": "Gulab Jamun",
+          "price": 90,
+          "isVeg": false,
+          "image": "https://images.unsplash.com/photo-1504754524776-8f4f37790ca0",
+          "description": "Freshly prepared with premium ingredients."
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "name": "Classic Restaurant",
+      "image": "images/Restaurant-images/Classic Restaurant.jpg",
+      "restaurantTypes": [
+        "North Indian",
+        "Chinese",
+        "Veg",
+        "Non Veg"
+      ],
+      "rating": 4.4,
+      "priceForTwo": 399,
+      "deliveryTime": "25 min",
+      "isOpen": true,
+      "offers": [
+        "Flat 50% OFF on weekdays"
+      ],
+      "location": {
+        "area": "Hazratganj",
+        "city": "Lucknow"
       },
-      {
-        "dish": "Chilli Paneer",
-        "price": 220,
-        "image": "https://images.unsplash.com/photo-1543353071-873f17a7a088"
+      "foodPreferences": {
+        "veg": true,
+        "nonVeg": true
       },
-      {
-        "dish": "Veg Fried Rice",
-        "price": 180,
-        "image": "https://images.unsplash.com/photo-1473093295043-cdd812d0e601"
+      "description": "Classic Restaurant - Treat | Pure Veg Restaurant in Lucknow",
+      "menuItems": [
+        {
+          "itemId": "item_9_001",
+          "name": "Dahi Puri",
+          "price": 120,
+          "isVeg": false,
+          "image": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe",
+          "description": "Freshly prepared with premium ingredients."
+        },
+        {
+          "itemId": "item_9_002",
+          "name": "Chilli Paneer",
+          "price": 220,
+          "isVeg": false,
+          "image": "https://images.unsplash.com/photo-1543353071-873f17a7a088",
+          "description": "Freshly prepared with premium ingredients."
+        },
+        {
+          "itemId": "item_9_003",
+          "name": "Veg Fried Rice",
+          "price": 180,
+          "isVeg": false,
+          "image": "https://images.unsplash.com/photo-1473093295043-cdd812d0e601",
+          "description": "Freshly prepared with premium ingredients."
+        },
+        {
+          "itemId": "item_9_004",
+          "name": "Gulab Jamun",
+          "price": 90,
+          "isVeg": false,
+          "image": "https://images.unsplash.com/photo-1504754524776-8f4f37790ca0",
+          "description": "Freshly prepared with premium ingredients."
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "name": "Classic Restaurant",
+      "image": "images/Restaurant-images/Classic Restaurant.jpg",
+      "restaurantTypes": [
+        "North Indian",
+        "Chinese",
+        "Veg",
+        "Non Veg"
+      ],
+      "rating": 4.4,
+      "priceForTwo": 399,
+      "deliveryTime": "25 min",
+      "isOpen": true,
+      "offers": [
+        "Flat 50% OFF on weekdays"
+      ],
+      "location": {
+        "area": "Hazratganj",
+        "city": "Lucknow"
       },
-      {
-        "dish": "Gulab Jamun",
-        "price": 90,
-        "image": "https://images.unsplash.com/photo-1504754524776-8f4f37790ca0"
-      }
-    ]
-  },
-  
-   {
-    "id": 9,
-    "veg": "veg-image",
-    "non-veg": "non-veg-image",
-    "name": "Classic Restaurant",
-    "rating": 4.4,
-    "price": "399",
-    "prepTime": "25 min",
-    "image": "images/Restaurant-images/Classic Restaurant.jpg",
-    "location": "Hazratganj, Lucknow",
-    "about": "Classic Restaurant - Treat | Pure Veg Restaurant in Lucknow",
-    "restype1": "North Indian",
-    "restype2": "Chinese",
-    "restype3": "Veg",
-    "restype4": "Non Veg",
-    "offers": "Flat 50% OFF on weekdays",
-    "menu": [
-      {
-        "dish": "Dahi Puri",
-        "price": 120,
-        "image": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe"
+      "foodPreferences": {
+        "veg": true,
+        "nonVeg": true
       },
-      {
-        "dish": "Chilli Paneer",
-        "price": 220,
-        "image": "https://images.unsplash.com/photo-1543353071-873f17a7a088"
-      },
-      {
-        "dish": "Veg Fried Rice",
-        "price": 180,
-        "image": "https://images.unsplash.com/photo-1473093295043-cdd812d0e601"
-      },
-      {
-        "dish": "Gulab Jamun",
-        "price": 90,
-        "image": "https://images.unsplash.com/photo-1504754524776-8f4f37790ca0"
-      }
-    ]
-  },
-  
-   {
-    "id": 9,
-    "veg": "veg-image",
-    "non-veg": "non-veg-image",
-    "name": "Classic Restaurant",
-    "rating": 4.4,
-    "price": "399",
-    "prepTime": "25 min",
-    "image": "images/Restaurant-images/Classic Restaurant.jpg",
-    "location": "Hazratganj, Lucknow",
-    "about": "Classic Restaurant - Treat | Pure Veg Restaurant in Lucknow",
-    "restype1": "North Indian",
-    "restype2": "Chinese",
-    "restype3": "Veg",
-    "restype4": "Non Veg",
-    "offers": "Flat 50% OFF on weekdays",
-    "menu": [
-      {
-        "dish": "Dahi Puri",
-        "price": 120,
-        "image": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe"
-      },
-      {
-        "dish": "Chilli Paneer",
-        "price": 220,
-        "image": "https://images.unsplash.com/photo-1543353071-873f17a7a088"
-      },
-      {
-        "dish": "Veg Fried Rice",
-        "price": 180,
-        "image": "https://images.unsplash.com/photo-1473093295043-cdd812d0e601"
-      },
-      {
-        "dish": "Gulab Jamun",
-        "price": 90,
-        "image": "https://images.unsplash.com/photo-1504754524776-8f4f37790ca0"
-      }
-    ]
-  },
-  
-   {
-    "id": 9,
-    "veg": "veg-image",
-    "non-veg": "non-veg-image",
-    "name": "Classic Restaurant",
-    "rating": 4.4,
-    "price": "399",
-    "prepTime": "25 min",
-    "image": "images/Restaurant-images/Classic Restaurant.jpg",
-    "location": "Hazratganj, Lucknow",
-    "about": "Classic Restaurant - Treat | Pure Veg Restaurant in Lucknow",
-    "restype1": "North Indian",
-    "restype2": "Chinese",
-    "restype3": "Veg",
-    "restype4": "Non Veg",
-    "offers": "Flat 50% OFF on weekdays",
-    "menu": [
-      {
-        "dish": "Dahi Puri",
-        "price": 120,
-        "image": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe"
-      },
-      {
-        "dish": "Chilli Paneer",
-        "price": 220,
-        "image": "https://images.unsplash.com/photo-1543353071-873f17a7a088"
-      },
-      {
-        "dish": "Veg Fried Rice",
-        "price": 180,
-        "image": "https://images.unsplash.com/photo-1473093295043-cdd812d0e601"
-      },
-      {
-        "dish": "Gulab Jamun",
-        "price": 90,
-        "image": "https://images.unsplash.com/photo-1504754524776-8f4f37790ca0"
-      }
-    ]
-  },
-  
-   {
-    "id": 9,
-    "veg": "veg-image",
-    "non-veg": "non-veg-image",
-    "name": "Classic Restaurant",
-    "rating": 4.4,
-    "price": "399",
-    "prepTime": "25 min",
-    "image": "images/Restaurant-images/Classic Restaurant.jpg",
-    "location": "Hazratganj, Lucknow",
-    "about": "Classic Restaurant - Treat | Pure Veg Restaurant in Lucknow",
-    "restype1": "North Indian",
-    "restype2": "Chinese",
-    "restype3": "Veg",
-    "restype4": "Non Veg",
-    "offers": "Flat 50% OFF on weekdays",
-    "menu": [
-      {
-        "dish": "Dahi Puri",
-        "price": 120,
-        "image": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe"
-      },
-      {
-        "dish": "Chilli Paneer",
-        "price": 220,
-        "image": "https://images.unsplash.com/photo-1543353071-873f17a7a088"
-      },
-      {
-        "dish": "Veg Fried Rice",
-        "price": 180,
-        "image": "https://images.unsplash.com/photo-1473093295043-cdd812d0e601"
-      },
-      {
-        "dish": "Gulab Jamun",
-        "price": 90,
-        "image": "https://images.unsplash.com/photo-1504754524776-8f4f37790ca0"
-      }
-    ]
-  }
-
-]
+      "description": "Classic Restaurant - Treat | Pure Veg Restaurant in Lucknow",
+      "menuItems": [
+        {
+          "itemId": "item_9_001",
+          "name": "Dahi Puri",
+          "price": 120,
+          "isVeg": false,
+          "image": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe",
+          "description": "Freshly prepared with premium ingredients."
+        },
+        {
+          "itemId": "item_9_002",
+          "name": "Chilli Paneer",
+          "price": 220,
+          "isVeg": false,
+          "image": "https://images.unsplash.com/photo-1543353071-873f17a7a088",
+          "description": "Freshly prepared with premium ingredients."
+        },
+        {
+          "itemId": "item_9_003",
+          "name": "Veg Fried Rice",
+          "price": 180,
+          "isVeg": false,
+          "image": "https://images.unsplash.com/photo-1473093295043-cdd812d0e601",
+          "description": "Freshly prepared with premium ingredients."
+        },
+        {
+          "itemId": "item_9_004",
+          "name": "Gulab Jamun",
+          "price": 90,
+          "isVeg": false,
+          "image": "https://images.unsplash.com/photo-1504754524776-8f4f37790ca0",
+          "description": "Freshly prepared with premium ingredients."
+        }
+      ]
+    }
+  ]
+}

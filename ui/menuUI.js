@@ -14,7 +14,7 @@ export function renderMenuUI({ container, items = [], onAddToCart } = {}) {
 
   container.innerHTML = items
     .map((item, index) => {
-      const dishName = getSafeText(item?.dish, `Dish ${index + 1}`);
+      const dishName = getSafeText(item?.name ?? item?.dish, `Dish ${index + 1}`);
       const dishPrice = Number(item?.price || 0);
       const dishImage = getSafeText(
         item?.image,

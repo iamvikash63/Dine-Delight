@@ -57,28 +57,50 @@
       <a href="#best-deals" class="cta-btn secondary">Explore Deals</a>
     </div>
 
-    <div class="hero-stats">
-      <div><strong>500+</strong><span>Verified Restaurants</span></div>
-      <div><strong>4.8</strong><span>Average User Rating</span></div>
-      <div><strong>25 min</strong><span>Typical Prep Time</span></div>
+    <div class="hero-stats hero-stats-primary">
+      <article class="stat-card">
+        <span class="stat-icon"><i class="fa-solid fa-store"></i></span>
+        <strong>500+</strong>
+        <span>Verified Restaurants</span>
+        <p>Curated partners with quality checks.</p>
+      </article>
+      <article class="stat-card">
+        <span class="stat-icon"><i class="fa-solid fa-star"></i></span>
+        <strong>4.8</strong>
+        <span>Average User Rating</span>
+        <p>Built from real reviews and repeat orders.</p>
+      </article>
+      <article class="stat-card">
+        <span class="stat-icon"><i class="fa-solid fa-bolt"></i></span>
+        <strong>25 min</strong>
+        <span>Typical Prep Time</span>
+        <p>Fast fulfillment from nearby kitchens.</p>
+      </article>
     </div>
-    <div class="hero-stats">
-      <div><strong>Dining</strong><span>Stay for a Bite</span></div>
-      <div><strong>Takeaway</strong><span>Take it to Go</span></div>
-      <div><strong>Delivery</strong><span>Order In</span></div>
+    <div class="hero-stats hero-stats-secondary">
+      <article class="stat-chip">
+        <strong><i class="fa-solid fa-utensils"></i> Dining</strong>
+        <span>Stay for a bite with table-ready options.</span>
+      </article>
+      <article class="stat-chip">
+        <strong><i class="fa-solid fa-bag-shopping"></i> Takeaway</strong>
+        <span>Quick pickup counters for busy schedules.</span>
+      </article>
+      <article class="stat-chip">
+        <strong><i class="fa-solid fa-motorcycle"></i> Delivery</strong>
+        <span>Live order tracking from kitchen to doorstep.</span>
+      </article>
     </div>
   </section>
 
 
 <div class="Select-options-to-show">
   <ul>
-    <li>
-      Restaurants
-    </li>
+    <li class="active">Restaurants</li>
     <li>Events</li>
     <li>Movies</li>
-    <li>Recipe</li>
-    <li>Ask Anythings</li>
+    <li>Recipes</li>
+    <li>Ask Anything</li>
   </ul>
 </div>
   <!-- populate restaurants section -->
@@ -241,8 +263,13 @@
       <h4>Showing Popular Restaurants Near You</h4>
       <p>Compare cuisine, offers, prep time, and pricing before you order.</p>
       </div>
-      <div class="Res-section-head-content">
-     <i class="fa-solid fa-list"></i><i class="fa-solid fa-table-cells"></i>
+      <div class="Res-section-head-content" aria-label="View options">
+        <button type="button" class="view-toggle active" aria-label="List view">
+          <i class="fa-solid fa-list"></i>
+        </button>
+        <button type="button" class="view-toggle" aria-label="Grid view">
+          <i class="fa-solid fa-table-cells"></i>
+        </button>
       </div>
     </div>
     <div class="restaurant-grid" id="restaurantGrid"></div>

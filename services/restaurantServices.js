@@ -4,7 +4,8 @@ export async function loadRestaurants(){
     let data;
     if(!data){
         const res=await fetch ("restaurants.json");
-        data = await res.json();
+        const raw = await res.json();
+        data = Array.isArray(raw) ? raw : (raw?.restaurants || []);
         saveToStorage("restaurants",data);
     }
     return data;
