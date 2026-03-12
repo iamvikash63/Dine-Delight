@@ -65,6 +65,26 @@ async function init() {
   await getlocation();
 }
 
+
+
+// %%%%%%%%%% Popup Search location %%%%%%%%%%%%
+const Popup_Location_Search=document.querySelector('.search-btn');
+const Popup_Container= document.querySelector('.Search-location-popup');
+const Popu_Close=document.querySelector('.Popup-Cross')
+Popup_Location_Search.addEventListener('click', ()=>{
+Popup_Container.style.display="block";
+Popup_Container.style.opacity=1;
+Popu_Close.style.cursor="pointer";
+Popu_Close.addEventListener('click',()=>{
+  Popup_Container.style.display="none";
+  
+});
+});
+
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
 document.addEventListener("DOMContentLoaded", init);
 
 // Expose handlers globally because index.html uses inline attributes.

@@ -27,6 +27,7 @@ body {
     radial-gradient(circle at 5% 4%, #ffd7aa 0%, rgba(255, 215, 170, 0) 28%),
     radial-gradient(circle at 98% 18%, #ffe8bf 0%, rgba(255, 232, 191, 0) 28%),
     var(--bg);
+    
 }
 
 .navbar {
@@ -318,7 +319,78 @@ body {
   line-height: 1.45;
 }
 
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Location & Cities Popup %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
 
+.Search-location-popup{
+  position: fixed;
+
+  top: 80px;
+  bottom: 40px;
+  background-color: var(--surface);
+  width: 600px;
+  height: 500px;
+  padding: 0px 20px 20px 20px;
+  overflow-y: auto;
+  z-index: 1000;
+  border-radius: 20px;
+  opacity: 0;
+  display: none;
+ 
+  
+}
+.Search-location-popup::-webkit-scrollbar {
+    display: none;
+}
+.Search-loc-heading{
+  position: sticky;
+  background-color: var(--surface);
+  top: 0;
+  padding: 10px 0px 20px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.popup-search{
+  border: 1px solid var(--stroke);
+  padding: 10px;
+  border-radius: 20px;
+}
+.Use-yr-crrnt-loc{
+  padding: 10px;
+  text-align: start;
+  font-size: medium;
+  color: var(--brand);
+  font-weight: 700;
+  cursor: pointer;
+}
+.Popular-cities h4{
+   padding: 10px;
+  text-align: start;
+  font-size: medium;
+  font-weight: 700;
+  
+}
+.Cities-Container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+ gap: 10px;
+}
+.Cities{
+  position: relative;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  border: 1px solid var(--stroke);
+}
+.Cities >a>img{
+height: 40px;
+}
+
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
 /*restaurant populate section style */
 .Select-options-to-show{
   width: min(1160px, 100%);

@@ -43,18 +43,169 @@
       <div class="search-item">
         <span class="icon"><i class="fa-solid fa-location-dot"></i></span>
         <input type="text" id="location-input" placeholder="Detecting your location..." />
+        
       </div>
+      <button class="search-btn" onclick="getlocation()">Use My Location</button>
       <div class="divider"></div>
       <div class="search-item">
         <span class="icon"><i class="fa-solid fa-magnifying-glass"></i></span>
         <input type="text" id="searchInput" placeholder="Search restaurants or dishes" oninput="searchRestaurants()" />
       </div>
-      <button class="search-btn" onclick="getlocation()">Use My Location</button>
+      <button class="search-btn" onclick="getlocation()">Search</button>
     </div>
 
-    <div class="cta-wrapper">
+    <!-- <div class="cta-wrapper">
       <a href="#restaurants" class="cta-btn primary">Browse Restaurants</a>
       <a href="#best-deals" class="cta-btn secondary">Explore Deals</a>
+    </div> -->
+
+    <!--location Popup -->
+    <div class="Search-location-popup">
+      <div class="Search-loc-heading">
+        <h3>Search Location</h3>
+        <i class="fa-solid fa-xmark Popup-Cross"></i>
+      </div>
+       <div class="search-item popup-search">
+        <span class="icon"><i class="fa-solid fa-location-dot"></i></span>
+        <input type="text" id="location-input" placeholder="Detecting your location..." />
+        
+      </div>
+      <div class="Use-yr-crrnt-loc">
+        <p> <i class="fa-solid fa-location-dot"></i> Use Current Location</p>
+      </div>
+      <div class="Popular-cities">
+        <h4>Popular Cities</h4>
+        <div class="Cities-Container">
+
+          <div class="Cities">
+            <a href="#" style="text-decoration: none; color: #f26419;">
+            <img src="./images/Cities-img/delhi-ncr-26.avif" alt="mumbai">
+            <p>Delhi NCR</p>
+            </a>
+          </div>
+
+          <div class="Cities">
+            <a href="" style= "text-decoration: none; color: #f26419;">
+            <img src="./images/Cities-img/mumbai-26.png" alt="mumbai">
+            <p>Mumbai</p>
+            </a>
+          </div>
+
+          <div class="Cities">
+            <a href="" style= "text-decoration: none; color: #f26419;">
+            <img src="./images/Cities-img/bengaluru-26.avif" alt="mumbai">
+            <p>Bengakuru</p>
+            </a>
+          </div>
+
+          <div class="Cities">
+            <a href="" style= "text-decoration: none; color: #f26419;">
+            <img src="./images/Cities-img/chennai-26.avif" alt="mumbai">
+            <p>Chennai</p>
+            </a>
+          </div>
+
+          <div class="Cities">
+            <a href="" style= "text-decoration: none; color: #f26419;">
+            <img src="./images/Cities-img/agra-26.avif" alt="mumbai">
+            <p>Agra</p>
+            </a>
+          </div>
+
+          <div class="Cities">
+            <a href="" style= "text-decoration: none; color: #f26419;">
+            <img src="./images/Cities-img/dubai-26.avif" alt="mumbai">
+            <p>Dubai</p>
+            </a>
+          </div>
+
+          <div class="Cities">
+            <a href="" style= "text-decoration: none; color: #f26419;">
+            <img src="./images/Cities-img/abu-dhabi-26.avif" alt="mumbai">
+            <p>Abu-Dhabi</p>
+            </a>
+          </div>
+
+          <div class="Cities">
+            <a href="" style= "text-decoration: none; color: #f26419;">
+            <img src="./images/Cities-img/ahmedabad-26.avif" alt="mumbai">
+            <p>Ahmedabad</p>
+            </a>
+          </div>
+
+          <div class="Cities">
+            <a href="" style= "text-decoration: none; color: #f26419;">
+            <img src="./images/Cities-img/amritsar-26.avif" alt="mumbai">
+            <p>Amritsar</p>
+            </a>
+          </div>
+
+          <div class="Cities">
+            <a href="" style= "text-decoration: none; color: #f26419;">
+            <img src="./images/Cities-img/chandigarh-tricity-26.avif" alt="mumbai">
+            <p>Chandigarh</p>
+            </a>
+          </div>
+
+          <div class="Cities">
+            <a href="" style= "text-decoration: none; color: #f26419;">
+            <img src="./images/Cities-img/lucknow-26.avif" alt="mumbai">
+            <p>Lucknow</p>
+            </a>
+          </div>
+
+          <div class="Cities">
+            <a href="" style= "text-decoration: none; color: #f26419;">
+            <img src="./images/Cities-img/nagpur-26.avif" alt="mumbai">
+            <p>Nagpur</p>
+            </a>
+          </div>
+
+           <div class="Cities">
+            <a href="" style= "text-decoration: none; color: #f26419;">
+            <img src="./images/Cities-img/vadodara-26.avif" alt="mumbai">
+            <p>Vdodara</p>
+            </a>
+          </div>
+
+           <div class="Cities">
+            <a href="" style= "text-decoration: none; color: #f26419;">
+            <img src="./images/Cities-img/ranchi-26.avif" alt="mumbai">
+            <p>Ranchi</p>
+            </a>
+          </div>
+
+           <div class="Cities">
+            <a href="" style= "text-decoration: none; color: #f26419;">
+            <img src="./images/Cities-img/goa-26.avif" alt="mumbai">
+            <p>Goa</p>
+            </a>
+          </div>
+
+           <div class="Cities">
+            <a href="" style= "text-decoration: none; color: #f26419;">
+            <img src="./images/Cities-img/kochi-26.avif" alt="mumbai">
+            <p>Kochi</p>
+            </a>
+          </div>
+
+           <div class="Cities">
+            <a href="" style= "text-decoration: none; color: #f26419;">
+            <img src="./images/Cities-img/kolkata-26.avif" alt="mumbai">
+            <p>Kolkata</p>
+            </a>
+          </div>
+
+           <div class="Cities">
+            <a href="" style= "text-decoration: none; color: #f26419;">
+            <img src="./images/Cities-img/pune-26.avif" alt="mumbai">
+            <p>Pune</p>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
     </div>
 
     <div class="hero-stats hero-stats-primary">

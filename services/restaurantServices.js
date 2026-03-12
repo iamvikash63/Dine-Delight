@@ -1,4 +1,4 @@
-import { saveToStorage,getfromStorage } from "../utils/storage.js";
+import { saveToStorage} from "../utils/storage.js";
 
 export async function loadRestaurants(){
     let data;

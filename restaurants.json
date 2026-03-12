@@ -25,6 +25,40 @@
         "nonVeg": true
       },
       "description": "Spice Villa serves classic North Indian comfort food with fresh gravies and tandoor breads.",
+      "Reviews_Section":[
+        {
+          "Cust_Name": "Vikash",
+          "reviews":"Best food quality and fast service.",
+          "Review_rating":"4.5"
+        },
+        {
+          "Cust_Name": "Vikash",
+          "reviews":"Best food quality and fast service.",
+          "Review_rating":"4.5"
+        },
+        {
+          "Cust_Name": "Vikash",
+          "reviews":"Best food quality and fast service.",
+          "Review_rating":"4.5"
+        },
+        {
+          "Cust_Name": "Vikash",
+          "reviews":"Best food quality and fast service.",
+          "Review_rating":"3.4"
+        },
+        {
+          "Cust_Name": "Vikash",
+          "reviews":"Best food quality and fast service.",
+          "Review_rating":"3.4"
+        },
+        {
+          "Cust_Name": "Vikash",
+          "reviews":"Best food quality and fast service.",
+          "Review_rating":"3.4"
+        }
+        
+        
+      ],
       "menuItems": [
         {
           "itemId": "item_1_001",

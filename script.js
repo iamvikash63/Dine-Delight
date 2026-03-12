@@ -8,6 +8,7 @@ async function initRestaurantDetailPage() {
   if (!detailContainer || !menuContainer) return;
 
   const selectedRestaurantId = localStorage.getItem("selectedRestaurant");
+  console.log(selectedRestaurantId);
   if (!selectedRestaurantId) {
     detailContainer.innerHTML = "<p>Please select a restaurant from the home page.</p>";
     return;
