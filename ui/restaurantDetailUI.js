@@ -67,7 +67,7 @@ export function renderRestaurantDetailUI({
   detailContainer.innerHTML = `
     <div class="detail-intro">
       <p class="detail-eyebrow">Restaurant Profile</p>
-      <h1>${restaurant.name} Menu, Reviews & Ordering</h1>
+      <h1>Menu, Reviews & Ordering</h1>
       <p>
         Check chef highlights, delivery estimate, offers and top dishes before placing your order.
       </p>
@@ -107,9 +107,7 @@ export function renderRestaurantDetailUI({
             <i class="fa-solid ${isOpenNow ? "fa-circle-check" : "fa-circle-xmark"}"></i>
             ${isOpenNow ? "Open Now" : "Currently Closed"}
           </span>
-          <span><i class="fa-solid fa-star"></i> ${rating}</span>
-          <span><i class="fa-solid fa-indian-rupee-sign"></i> Starting ${FormatINR(restaurant.priceForTwo ?? restaurant.price ?? 0)}</span>
-          <span><i class="fa-regular fa-clock"></i> ${deliveryText}</span>
+          <span><i class="fa-solid fa-utensils"></i> ${menuItems.length || 0} menu items</span>
         </div>
         ${renderCuisineBadges(restaurant)}
         ${renderOffersBadge(restaurant)}

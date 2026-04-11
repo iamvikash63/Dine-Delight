@@ -27,7 +27,7 @@ body {
     radial-gradient(circle at 5% 4%, #ffd7aa 0%, rgba(255, 215, 170, 0) 28%),
     radial-gradient(circle at 98% 18%, #ffe8bf 0%, rgba(255, 232, 191, 0) 28%),
     var(--bg);
-    
+
 }
 
 .navbar {
@@ -246,6 +246,7 @@ body {
 }
 
 .hero-stats-primary .stat-card {
+  align-items: center;
   background: linear-gradient(180deg, #ffffff 0%, #fff8ec 100%);
   border: 1px solid #efdac2;
   border-radius: 18px;
@@ -260,17 +261,19 @@ body {
 }
 
 .stat-icon {
-  width: 34px;
-  height: 34px;
-  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  border-radius: 14px;
+  background-color: #fff1dd;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: #9e5514;
-  background: #fff1dd;
   border: 1px solid #f3d7b9;
   margin-bottom: 10px;
 }
+
+
+
 
 .hero-stats strong {
   display: block;
@@ -335,6 +338,8 @@ body {
   border-radius: 20px;
   opacity: 0;
   display: none;
+  border: 1px solid var(--brand-2);
+  box-shadow: 0.1px 1px 2px #17120d;
  
   
 }
@@ -343,6 +348,7 @@ body {
 }
 .Search-loc-heading{
   position: sticky;
+  z-index: 1000;
   background-color: var(--surface);
   top: 0;
   padding: 10px 0px 20px 0px;
@@ -351,10 +357,12 @@ body {
   align-items: center;
 }
 .popup-search{
+  
   border: 1px solid var(--stroke);
   padding: 10px;
   border-radius: 20px;
 }
+
 .Use-yr-crrnt-loc{
   padding: 10px;
   text-align: start;
@@ -374,6 +382,7 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
  gap: 10px;
+ 
 }
 .Cities{
   position: relative;
@@ -390,7 +399,232 @@ body {
 height: 40px;
 }
 
+.search-popup-heading{
+ text-align: start;
+  gap: 18px;
+}
+
+.search-popup-heading p{
+  margin: 6px 0 0;
+  color: #7a6452;
+  font-size: 0.92rem;
+}
+
+.search-popup-shell{
+  display: grid;
+  gap: 20px;
+}
+
+.search-popup-input{
+  background: linear-gradient(180deg, #fffdf9 0%, #fff7ee 100%);
+  border-color: #f0dcc2;
+}
+
+.search-popup-input input{
+  width: 100%;
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 0.98rem;
+  color: #17120d;
+}
+
+.search-popup-section{
+  display: grid;
+  gap: 12px;
+}
+
+.search-popup-label-row{
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.search-popup-label-row h4{
+  margin: 0;
+  font-size: 1rem;
+}
+
+.search-popup-label-row span{
+  color: #7a6452;
+  font-size: 0.83rem;
+}
+
+.search-popup-chip-grid{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.search-popup-chip{
+  border: 1px solid #f0dcc2;
+  background: #fff8ef;
+  color: #6f4a2d;
+  padding: 10px 14px;
+  border-radius: 999px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.search-popup-chip:hover{
+  transform: translateY(-1px);
+  border-color: var(--brand-2);
+  box-shadow: 0 8px 18px rgba(46, 25, 9, 0.08);
+}
+
+.search-popup-card-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px;
+}
+
+.search-popup-card{
+  padding: 16px;
+  border-radius: 18px;
+  border: 1px solid #f0dcc2;
+  background: linear-gradient(180deg, #fffdfa 0%, #fff4e6 100%);
+  display: grid;
+  gap: 8px;
+}
+
+.search-popup-card strong{
+  font-size: 0.98rem;
+}
+
+.search-popup-card p{
+  margin: 0;
+  color: #7a6452;
+  font-size: 0.85rem;
+  line-height: 1.45;
+}
+
+.search-popup-card-icon{
+  width: 42px;
+  height: 42px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+  background: #fff;
+  color: var(--brand);
+  border: 1px solid #f1dcc3;
+}
+
+.search-popup-list{
+  display: grid;
+  gap: 10px;
+}
+
+.search-popup-list-item{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 14px 16px;
+  border-radius: 16px;
+  border: 1px solid #f0dcc2;
+  background: #fff;
+  color: #4f3a28;
+  cursor: pointer;
+}
+
+.search-popup-list-item span{
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+}
+
 /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+
+
+
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Login Popup Style %%%%%%%%%%%%%%%%*/
+
+.login-with-otp-container{
+  box-sizing: border-box;
+  position: fixed;
+  display: none;
+  background-color: var(--surface);
+  width: max-content;
+  height: max-content;
+  padding: 0px 20px 20px 20px;
+   border: 1px solid var(--brand-2);
+  box-shadow: 0.1px 1px 2px #17120d;
+  border-radius: 20px;
+  z-index: 1000;
+  
+}
+.login-with-otp-container h3{
+  color: #17120d;
+  font-weight: 500;
+  font-size: 1.2rem;
+ 
+  text-align: start;
+  padding: 10px;
+  
+}
+.login-input-form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 8px;
+  border-radius: 20px;
+  border: 1px solid var(--brand-2);
+}
+.login-input-form input{
+  width: 75%;
+  height: 30px;
+  border: none;
+  outline: none;
+}
+.country-isd{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  cursor: pointer;
+}
+.country-isd img{
+  height: auto;
+width: 40px;
+}
+.input-container-mb p{
+  font-size: .8rem;
+  text-align: start;
+  padding: 10px;
+}
+.consent{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 10px;
+  p{
+    font-size: 1rem;
+  }
+}
+.get-otp-btn{
+width: 100%;
+
+  padding: 8px;
+  background: linear-gradient(130deg, var(--brand), var(--brand-2));
+  border: 1px solid var(--brand-2);
+
+  cursor: pointer;
+  color: var(--surface);
+  font-weight: 550;
+  font-size: .9rem;
+  outline: none;
+  border-radius: 20px;
+}
+
+
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
 /*restaurant populate section style */
 .Select-options-to-show{
   width: min(1160px, 100%);
@@ -407,8 +641,7 @@ height: 40px;
   gap: 10px;
   margin: 0;
   padding: 0;
-  overflow-x: auto;
-  scrollbar-width: thin;
+  flex-wrap: wrap;
 }
 .Select-options-to-show > ul li{
   list-style: none;
@@ -428,7 +661,7 @@ height: 40px;
   color: #f26419;
   border-color: #f6cda4;
   background: #fff7ee;
-  transform: translateY(-1px);
+
 }
 
 .Select-options-to-show > ul li.active{
